@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { RssProvider } from '../../providers/rss/rss';
+import { PlayerProvider } from '../../providers/player/player';
 
 
 
@@ -11,7 +12,7 @@ import { RssProvider } from '../../providers/rss/rss';
 export class HomePage {
 	rssDataArray: any = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
   }
 
   ionViewDidLoad() {
@@ -29,9 +30,8 @@ export class HomePage {
  }
 
  PlayPodcast(url) {
- 	
- 	console.log('playing ', url);
- }
+ 	this.player.Play(url);
+}
 
  ReFormat(title, part) {
  	if (part == 0) {

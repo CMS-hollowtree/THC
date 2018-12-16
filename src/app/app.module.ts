@@ -9,7 +9,10 @@ import { HomePage } from '../pages/home/home';
 import { RssProvider } from '../providers/rss/rss';
 import { HttpModule } from '@angular/http';
 
+import { Media } from '@ionic-native/media';
+
 import { HttpClientModule } from '@angular/common/http';
+import { PlayerProvider } from '../providers/player/player';
 
 
 @NgModule({
@@ -32,7 +35,9 @@ import { HttpClientModule } from '@angular/common/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RssProvider
+    RssProvider,
+    PlayerProvider,
+    Media
   ]
 })
 export class AppModule {}
