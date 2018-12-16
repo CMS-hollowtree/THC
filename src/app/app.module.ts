@@ -10,6 +10,7 @@ import { RssProvider } from '../providers/rss/rss';
 import { HttpModule } from '@angular/http';
 
 import { Media } from '@ionic-native/media';
+import { MusicControls } from '@ionic-native/music-controls';
 
 import { HttpClientModule } from '@angular/common/http';
 import { PlayerProvider } from '../providers/player/player';
@@ -37,7 +38,8 @@ import { PlayerProvider } from '../providers/player/player';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RssProvider,
     PlayerProvider,
-    Media
+    Media,
+    MusicControls
   ]
 })
 export class AppModule {}
