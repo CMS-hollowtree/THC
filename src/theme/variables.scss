@@ -38,7 +38,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  green:	  #1dc47c,
 );
 
 
@@ -80,9 +81,17 @@ $colors: (
 
 @import "ionic.ionicons";
 
-
+@font-face {
+  font-family: 'THC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Comfortaa-Regular.ttf');
+}
 // Fonts
 // --------------------------------------------------
 
 @import "roboto";
 @import "noto-sans";
+
+
+
