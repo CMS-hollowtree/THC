@@ -25,7 +25,7 @@ page-home {
   .card-subtitle {
     font-size: 1.5em;
     position: absolute;
-    top: 40%;
+    top: 45%;
     width: 100%;
     color: #fff;
   }
@@ -40,8 +40,20 @@ page-home {
 
   .playbtn {
   	position: absolute;
-    top: 80%;
+    bottom: 5%;
     right: 5%;
+  }
+
+  .downloadbtn {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+  }
+
+  .favbtn {
+    position: absolute;
+    top: 0%;
+    right: 0%;
   }
 
 }

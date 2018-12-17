@@ -6,6 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ListPage } from '../pages/list/list';
+
 import { RssProvider } from '../providers/rss/rss';
 import { HttpModule } from '@angular/http';
 
@@ -19,7 +21,8 @@ import { PlayerProvider } from '../providers/player/player';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ListPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { PlayerProvider } from '../providers/player/player';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ListPage
   ],
   providers: [
     StatusBar,

@@ -29,8 +29,9 @@ export class HomePage {
   );
  }
 
- PlayPodcast(url) {
- 	this.player.Play(url);
+ PlayPodcast(url, title, author, image) {
+ 	this.player.Stop();
+ 	this.player.Play(url, title, author, "https://www.thehighersidechats.com/wp-content/uploads/powerpress/Original_Logo_iTunes3.jpg");
 }
 
  ReFormat(title, part) {

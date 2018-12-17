@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title text-lg-center>THC</ion-title>
+    <ion-title>THC Podcasts</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -24,8 +24,15 @@
       {{ReFormat(podcast.title, 1)}}
     </h5>
 
-    <button ion-button  color="green" round align-item-start class="playbtn" (click)="PlayPodcast(podcast.enclosure.link)">
-        Play
+    <button ion-button color="light" round class="downloadbtn">
+      <ion-icon name='md-download' is-active="false"></ion-icon>
+    </button>
+    <button ion-button color="light" clear icon-only class="favbtn">
+      <ion-icon name='ios-star-outline' is-active="false"></ion-icon>
+    </button>
+
+    <button ion-button  color="green" round align-item-start class="playbtn" (click)="PlayPodcast(podcast.enclosure.link, ReFormat(podcast.title, 0), ReFormat(podcast.title, 1), 0)">
+        <ion-icon name='md-play' is-active="false"></ion-icon>
     </button>
   
   </ion-card>
