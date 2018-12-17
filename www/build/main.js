@@ -73,10 +73,10 @@ var HomePage = /** @class */ (function () {
     };
     HomePage.prototype.ForceReload = function (refresher) {
         var _this = this;
-        setTimeout(function () {
-            _this.Get_RSS_Feed();
+        this.rssProvider.GetRSS().subscribe(function (data) {
+            _this.rssDataArray = data;
             refresher.complete();
-        }, 2000);
+        });
     };
     HomePage.prototype.Get_RSS_Feed = function () {
         var _this = this;
@@ -99,11 +99,12 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\root\Documents\Ionic\THC\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>THC Podcasts</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="card-background-page">\n\n  <ion-refresher (ionRefresh)="ForceReload($event)">\n\n    <ion-refresher-content\n\n      pullingIcon="arrow-dropdown"\n\n      pullingText="Pull to refresh"\n\n      refreshingSpinner="circles"\n\n      refreshingText="Looking for new podcasts...">\n\n    </ion-refresher-content>\n\n  </ion-refresher>\n\n\n\n  <ion-card *ngFor="let podcast of rssDataArray.items" ng-if="rssDataArray">\n\n    <img src="https://www.thehighersidechats.com/wp-content/uploads/powerpress/Original_Logo_iTunes3.jpg" class="tinted">\n\n  \n\n    <h3 class="card-title">\n\n        {{ReFormat(podcast.title, 0)}}\n\n    </h3>\n\n\n\n    <p class="card-date">\n\n      {{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}\n\n    </p>\n\n\n\n    <h5 class="card-subtitle">\n\n      {{ReFormat(podcast.title, 1)}}\n\n    </h5>\n\n\n\n    <button ion-button color="light" round class="downloadbtn">\n\n      <ion-icon name=\'md-download\' is-active="false"></ion-icon>\n\n    </button>\n\n    <button ion-button color="light" clear icon-only class="favbtn">\n\n      <ion-icon name=\'ios-star-outline\' is-active="false"></ion-icon>\n\n    </button>\n\n\n\n    <button ion-button  color="green" round align-item-start class="playbtn" (click)="PlayPodcast(podcast.enclosure.link, ReFormat(podcast.title, 0), ReFormat(podcast.title, 1), 0)">\n\n        <ion-icon name=\'md-play\' is-active="false"></ion-icon>\n\n    </button>\n\n  \n\n  </ion-card>\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\root\Documents\Ionic\THC\src\pages\home\home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\root\Documents\Ionic\THC\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>THC Podcasts</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="card-background-page">\n\n  <ion-refresher (ionRefresh)="ForceReload($event)">\n\n    <ion-refresher-content\n\n      pullingIcon="arrow-dropdown"\n\n      pullingText="Pull to refresh"\n\n      refreshingSpinner="crescent"\n\n      refreshingText="checking for new podcasts...">\n\n    </ion-refresher-content>\n\n  </ion-refresher>\n\n\n\n  <ion-card *ngFor="let podcast of rssDataArray.items" ng-if="rssDataArray">\n\n    <img src="https://www.thehighersidechats.com/wp-content/uploads/powerpress/Original_Logo_iTunes3.jpg" class="tinted">\n\n  \n\n    <h3 class="card-title">\n\n        {{ReFormat(podcast.title, 0)}}\n\n    </h3>\n\n\n\n    <p class="card-date">\n\n      {{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}\n\n    </p>\n\n\n\n    <h5 class="card-subtitle">\n\n      {{ReFormat(podcast.title, 1)}}\n\n    </h5>\n\n\n\n    <button ion-button color="light" round class="downloadbtn">\n\n      <ion-icon name=\'md-download\' is-active="false"></ion-icon>\n\n    </button>\n\n    <button ion-button color="light" clear icon-only class="favbtn">\n\n      <ion-icon name=\'ios-star-outline\' is-active="false"></ion-icon>\n\n    </button>\n\n\n\n    <button ion-button  color="green" round align-item-start class="playbtn" (click)="PlayPodcast(podcast.enclosure.link, ReFormat(podcast.title, 0), ReFormat(podcast.title, 1), 0)">\n\n        <ion-icon name=\'md-play\' is-active="false"></ion-icon>\n\n    </button>\n\n  \n\n  </ion-card>\n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\root\Documents\Ionic\THC\src\pages\home\home.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_cache__["b" /* CacheService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_rss_rss__["a" /* RssProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_player_player__["a" /* PlayerProvider */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_cache__["b" /* CacheService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_cache__["b" /* CacheService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__providers_rss_rss__["a" /* RssProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_rss_rss__["a" /* RssProvider */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__providers_player_player__["a" /* PlayerProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__providers_player_player__["a" /* PlayerProvider */]) === "function" && _e || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -200,9 +201,10 @@ var StorageProvider = /** @class */ (function () {
     };
     StorageProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _b || Object])
     ], StorageProvider);
     return StorageProvider;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=storage.js.map

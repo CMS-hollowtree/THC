@@ -22,14 +22,17 @@ export class HomePage {
   }
 
   ForceReload(refresher) {
-    setTimeout(() => {
-      this.Get_RSS_Feed();
-      refresher.complete();
-    }, 2000);
+    this.rssProvider.GetRSS().subscribe(
+  		data => {
+  		this.rssDataArray = data;
+  		refresher.complete();
+  	}
+  );
   
   }
 
   Get_RSS_Feed() {
+
   	this.rssProvider.GetRSS().subscribe(
   		data => {
   		this.rssDataArray = data;

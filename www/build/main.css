@@ -17966,7 +17966,7 @@ ion-refresher-content {
   -webkit-transform-origin: center;
   transform-origin: center;
   font-size: 30px;
-  color: #000;
+  color: green;
   -webkit-transition: 200ms;
   transition: 200ms;
 }
@@ -17975,19 +17975,19 @@ ion-refresher-content {
 .refresher-refreshing-text {
   text-align: center;
   font-size: 16px;
-  color: #000;
+  color: green;
 }
 
 .refresher-refreshing .spinner-ios line,
 .refresher-refreshing .spinner-ios-small line,
 .refresher-refreshing .spinner-crescent circle {
-  stroke: #000;
+  stroke: green;
 }
 
 .refresher-refreshing .spinner-bubbles circle,
 .refresher-refreshing .spinner-circles circle,
 .refresher-refreshing .spinner-dots circle {
-  fill: #000;
+  fill: green;
 }
 
 ion-refresher-content[state=pulling] .refresher-pulling {
