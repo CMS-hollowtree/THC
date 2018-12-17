@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { CacheService } from 'ionic-cache';
 import { RssProvider } from '../../providers/rss/rss';
+import { map } from 'rxjs/operators'
+
 import { PlayerProvider } from '../../providers/player/player';
-
-
 
 @Component({
   selector: 'page-home',
@@ -12,21 +13,30 @@ import { PlayerProvider } from '../../providers/player/player';
 export class HomePage {
 	rssDataArray: any = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
+  constructor(public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
+  	this.Get_RSS_Feed();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
-    this.Get_RSS_Feed();
+  }
+
+  ForceReload(refresher) {
+    setTimeout(() => {
+      this.Get_RSS_Feed();
+      refresher.complete();
+    }, 2000);
+  
   }
 
   Get_RSS_Feed() {
   	this.rssProvider.GetRSS().subscribe(
   		data => {
   		this.rssDataArray = data;
-  		console.log(data);
+  		//this.rssDataArray = this.cache.loadFromObservable('TEST', data);
   	}
   );
+  
  }
 
  PlayPodcast(url, title, author, image) {

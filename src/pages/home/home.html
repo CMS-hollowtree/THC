@@ -8,8 +8,16 @@
 </ion-header>
 
 <ion-content padding class="card-background-page">
+  <ion-refresher (ionRefresh)="ForceReload($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Looking for new podcasts...">
+    </ion-refresher-content>
+  </ion-refresher>
 
-  <ion-card *ngFor="let podcast of rssDataArray.items">
+  <ion-card *ngFor="let podcast of rssDataArray.items" ng-if="rssDataArray">
     <img src="https://www.thehighersidechats.com/wp-content/uploads/powerpress/Original_Logo_iTunes3.jpg" class="tinted">
   
     <h3 class="card-title">
