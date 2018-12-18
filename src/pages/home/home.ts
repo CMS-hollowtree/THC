@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CacheService } from 'ionic-cache';
 import { RssProvider } from '../../providers/rss/rss';
-import { map } from 'rxjs/operators'
-
+import { StorageProvider } from '../../providers/storage/storage';
 import { PlayerProvider } from '../../providers/player/player';
 
 @Component({
@@ -13,12 +12,19 @@ import { PlayerProvider } from '../../providers/player/player';
 export class HomePage {
 	rssDataArray: any = [];
 
-  constructor(public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
-  	this.Get_RSS_Feed();
+  constructor(public storage: StorageProvider, public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    this.Get_RSS_Feed();
+  }
+
+  CheckDownloaded(key) {
+  	this.storage.Get(key.split(" ")[0]);
+  }
+
+  Download(url, date) {
+  	this.storage.Download(url, date.split(" ")[0]);
   }
 
   ForceReload(refresher) {
@@ -27,22 +33,21 @@ export class HomePage {
   		this.rssDataArray = data;
   		refresher.complete();
   	}
-  );
-  
+  );  
   }
 
   Get_RSS_Feed() {
-
   	this.rssProvider.GetRSS().subscribe(
   		data => {
   		this.rssDataArray = data;
-  		//this.rssDataArray = this.cache.loadFromObservable('TEST', data);
+  		
   	}
   );
   
  }
 
- PlayPodcast(url, title, author, image) {
+ PlayPodcast(date, url, title, author, image) {
+ 	console.log(Promise.resolve(this.storage.Get(date.split(' ')[0])));
  	this.player.Stop();
  	this.player.Play(url, title, author, "https://www.thehighersidechats.com/wp-content/uploads/powerpress/Original_Logo_iTunes3.jpg");
 }

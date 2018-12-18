@@ -18,6 +18,9 @@ import { MusicControls } from '@ionic-native/music-controls';
 import { HttpClientModule } from '@angular/common/http';
 import { PlayerProvider } from '../providers/player/player';
 import { StorageProvider } from '../providers/storage/storage';
+import { FileTransfer } from '@ionic-native/file-transfer';
+import { File } from '@ionic-native/file';
+import { Toast } from '@ionic-native/toast';
 
 
 @NgModule({
@@ -48,7 +51,9 @@ import { StorageProvider } from '../providers/storage/storage';
     Media,
     MusicControls,
     StorageProvider,
-    
+    File,
+    FileTransfer,
+    Toast
   ]
 })
 export class AppModule {}
