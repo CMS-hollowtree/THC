@@ -4,6 +4,12 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>THC Podcasts</ion-title>
+    <ion-buttons end>
+      <button ion-button>
+      <ion-icon (click)="Search()" name="search" end></ion-icon>
+    </button>
+    </ion-buttons>
+    
   </ion-navbar>
 </ion-header>
 
@@ -16,9 +22,9 @@
       refreshingText="checking for new podcasts...">
     </ion-refresher-content>
   </ion-refresher>
-
-  <ion-card *ngFor="let podcast of rssDataArray.items" ng-if="rssDataArray">
-    <img src="https://www.thehighersidechats.com/wp-content/uploads/powerpress/Original_Logo_iTunes3.jpg" class="tinted">
+<div *ngIf="rssDataArray.podcasts">
+  <ion-card *ngFor="let podcast of rssDataArray.podcasts">
+    <img src="assets/imgs/Original_Logo_iTunes3.jpg" class="tinted">
   
     <h3 class="card-title">
         {{ReFormat(podcast.title, 0)}}
@@ -32,18 +38,21 @@
       {{ReFormat(podcast.title, 1)}}
     </h5>
 
-    <button ion-button color="light" round class="downloadbtn" (click)="Download(podcast.enclosure.link, podcast.pubDate)">
+    <button ion-button color="light" round class="downloadbtn" (click)="Download(podcast.mp3, podcast.pubDate)">
       <ion-icon name='md-download' is-active="false"></ion-icon>
     </button>
-    <button ion-button color="light" clear icon-only class="favbtn">
-      <ion-icon name='ios-star-outline' is-active="false"></ion-icon>
+    <button (click)="addToFav(podcast)" ion-button color="light" clear icon-only class="favbtn">
+      <ion-icon *ngIf="podcast.userData.favorite" name='star' is-active="true"></ion-icon>
+      <ion-icon *ngIf="!podcast.userData.favorite" name='star-outline' is-active="true"></ion-icon>
     </button>
 
-    <button ion-button  color="green" round align-item-start class="playbtn" (click)="PlayPodcast(podcast.pubDate, podcast.enclosure.link, ReFormat(podcast.title, 0), ReFormat(podcast.title, 1), 0)">
+    <button ion-button  color="green" round align-item-start class="playbtn" (click)="PlayPodcast(podcast.pubDate, podcast.mp3, ReFormat(podcast.title, 0), ReFormat(podcast.title, 1), 0)">
         <ion-icon name='md-play' is-active="false"></ion-icon>
     </button>
   
   </ion-card>
+</div>
+  
 
 </ion-content>
 

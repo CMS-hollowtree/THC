@@ -25,6 +25,11 @@ export class StorageProvider {
 		);
   }
 
+  IsDownloaded(file) {
+  	console.log('looking for file...', file);
+  	return this.file.checkFile(this.file.dataDirectory, file);
+  }
+
   Download(url, date) {
   	this.file.checkFile(this.file.dataDirectory, date + '.mp3').then(
   		(file) => {
@@ -64,14 +69,11 @@ export class StorageProvider {
   }
 
   Set(key, val) {
-  	this.storage.set(key, val);
-  	console.log('Set', key, val);
+  	return this.storage.set(key, val);
   }
 
   Get(key) {
-  	this.storage.get(key).then((val) => {
-  		console.log('Got', val, key);
-  	});
+  	return this.storage.get(key);
   }
 
 }

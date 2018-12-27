@@ -33,7 +33,7 @@ export class PlayerProvider {
   	this.musicControls.create({
 	  track       : title,        // optional, default : ''
 	  artist      : 'Greg Carlwood & ' + author,                       // optional, default : ''
-	  cover       : image,      // optional, default : nothing
+	  cover       : 'assets/imgs/Original_Logo_iTunes3.jpg', //image,      // optional, default : nothing
 	  // cover can be a local path (use fullpath 'file:///storage/emulated/...', or only 'my_image.jpg' if my_image.jpg is in the www folder of your app)
 	  //           or a remote url ('http://...', 'https://...', 'ftp://...')
 	  isPlaying   : true,                         // optional, default : true
@@ -64,11 +64,13 @@ export class PlayerProvider {
 	  nextIcon: 'media_next',
 	  closeIcon: 'media_close',
 	  notificationIcon: 'notification'
-	 });
+	 }).then((res) => {
+     this.musicControls.updateIsPlaying(true);
+   });
 
-  	this.musicControls.updateIsPlaying(true);
   	file.play();
   	console.log('playing', podcast, file);
+    //this.musicControls.updateIsPlaying(true);
 
   	this.musicControls.subscribe().subscribe(action => {
             const message = JSON.parse(action).message;
