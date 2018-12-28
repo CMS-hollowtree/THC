@@ -169,8 +169,15 @@ var HomePage = /** @class */ (function () {
         this.player = player;
         this.rssDataArray = [];
         //this.Get_RSS_Feed();
-        this.rssProvider.GetRSS().then(function (data) {
-            _this.rssDataArray = data;
+        this.rssProvider.GetCached().then(function (data) {
+            if (data) {
+                console.log('yes');
+                _this.rssDataArray = data;
+            }
+            else {
+                console.log('no');
+                _this.Get_RSS_Feed();
+            }
         });
     }
     HomePage.prototype.ionViewDidLoad = function () {
@@ -203,11 +210,9 @@ var HomePage = /** @class */ (function () {
     };
     HomePage.prototype.Get_RSS_Feed = function () {
         var _this = this;
-        this.rssProvider.GetCached().then(function (data) {
-            _this.rssDataArray = data.podcasts;
-        }).catch(function (err) {
-            console.log(err);
-            _this.rssProvider.GetRSS();
+        this.rssProvider.GetRSS().then(function (data) {
+            console.log('got', data);
+            _this.rssDataArray = data;
         });
     };
     HomePage.prototype.PlayPodcast = function (date, url, title, author, image) {
@@ -235,11 +240,12 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\root\Documents\Ionic\THC\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>THC Podcasts</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button>\n\n      <ion-icon (click)="Search()" name="search" end></ion-icon>\n\n    </button>\n\n    </ion-buttons>\n\n    \n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="card-background-page">\n\n  <ion-refresher (ionRefresh)="ForceReload($event)">\n\n    <ion-refresher-content\n\n      pullingIcon="arrow-dropdown"\n\n      pullingText="Pull to refresh"\n\n      refreshingSpinner="crescent"\n\n      refreshingText="checking for new podcasts...">\n\n    </ion-refresher-content>\n\n  </ion-refresher>\n\n<div *ngIf="rssDataArray.podcasts">\n\n  <ion-card *ngFor="let podcast of rssDataArray.podcasts">\n\n    <img src="assets/imgs/Original_Logo_iTunes3.jpg" class="tinted">\n\n  \n\n    <h3 class="card-title">\n\n        {{ReFormat(podcast.title, 0)}}\n\n    </h3>\n\n\n\n    <p class="card-date">\n\n      {{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}\n\n    </p>\n\n\n\n    <h5 class="card-subtitle">\n\n      {{ReFormat(podcast.title, 1)}}\n\n    </h5>\n\n\n\n    <button ion-button color="light" round class="downloadbtn" (click)="Download(podcast.mp3, podcast.pubDate)">\n\n      <ion-icon name=\'md-download\' is-active="false"></ion-icon>\n\n    </button>\n\n    <button (click)="addToFav(podcast)" ion-button color="light" clear icon-only class="favbtn">\n\n      <ion-icon *ngIf="podcast.userData.favorite" name=\'star\' is-active="true"></ion-icon>\n\n      <ion-icon *ngIf="!podcast.userData.favorite" name=\'star-outline\' is-active="true"></ion-icon>\n\n    </button>\n\n\n\n    <button ion-button  color="green" round align-item-start class="playbtn" (click)="PlayPodcast(podcast.pubDate, podcast.mp3, ReFormat(podcast.title, 0), ReFormat(podcast.title, 1), 0)">\n\n        <ion-icon name=\'md-play\' is-active="false"></ion-icon>\n\n    </button>\n\n  \n\n  </ion-card>\n\n</div>\n\n  \n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\root\Documents\Ionic\THC\src\pages\home\home.html"*/,
+            selector: 'page-home',template:/*ion-inline-start:"C:\Users\root\Documents\Ionic\THC\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>THC Podcasts</ion-title>\n\n    <ion-buttons end>\n\n      <button ion-button>\n\n      <ion-icon (click)="Search()" name="search" end></ion-icon>\n\n    </button>\n\n    </ion-buttons>\n\n    \n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding class="card-background-page">\n\n  <ion-refresher (ionRefresh)="ForceReload($event)">\n\n    <ion-refresher-content\n\n      pullingIcon="arrow-dropdown"\n\n      pullingText="Pull to refresh"\n\n      refreshingSpinner="crescent"\n\n      refreshingText="checking for new podcasts...">\n\n    </ion-refresher-content>\n\n  </ion-refresher>\n\n<div *ngIf="rssDataArray">\n\n  <ion-card *ngFor="let podcast of rssDataArray.podcasts">\n\n    <img src="assets/imgs/Original_Logo_iTunes3.jpg" class="tinted">\n\n  \n\n    <h3 class="card-title">\n\n        {{ReFormat(podcast.title, 0)}}\n\n    </h3>\n\n\n\n    <p class="card-date">\n\n      {{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}\n\n    </p>\n\n\n\n    <h5 class="card-subtitle">\n\n      {{ReFormat(podcast.title, 1)}}\n\n    </h5>\n\n\n\n    <button ion-button color="light" round class="downloadbtn" (click)="Download(podcast.mp3, podcast.pubDate)">\n\n      <ion-icon name=\'md-download\' is-active="false"></ion-icon>\n\n    </button>\n\n    <button (click)="addToFav(podcast)" ion-button color="light" clear icon-only class="favbtn">\n\n      <ion-icon *ngIf="podcast.userData.favorite" name=\'star\' is-active="true"></ion-icon>\n\n      <ion-icon *ngIf="!podcast.userData.favorite" name=\'star-outline\' is-active="true"></ion-icon>\n\n    </button>\n\n\n\n    <button ion-button  color="green" round align-item-start class="playbtn" (click)="PlayPodcast(podcast.pubDate, podcast.mp3, ReFormat(podcast.title, 0), ReFormat(podcast.title, 1), 0)">\n\n        <ion-icon name=\'md-play\' is-active="false"></ion-icon>\n\n    </button>\n\n  \n\n  </ion-card>\n\n</div>\n\n  \n\n\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\root\Documents\Ionic\THC\src\pages\home\home.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_7__ionic_native_file__["a" /* File */], __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_4__providers_storage_storage__["a" /* StorageProvider */], __WEBPACK_IMPORTED_MODULE_2_ionic_cache__["b" /* CacheService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_rss_rss__["a" /* RssProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_player_player__["a" /* PlayerProvider */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_7__ionic_native_file__["a" /* File */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__ionic_native_file__["a" /* File */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__providers_storage_storage__["a" /* StorageProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__providers_storage_storage__["a" /* StorageProvider */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_cache__["b" /* CacheService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_cache__["b" /* CacheService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__providers_rss_rss__["a" /* RssProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_rss_rss__["a" /* RssProvider */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_5__providers_player_player__["a" /* PlayerProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_player_player__["a" /* PlayerProvider */]) === "function" && _h || Object])
     ], HomePage);
     return HomePage;
+    var _a, _b, _c, _d, _e, _f, _g, _h;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -285,11 +291,24 @@ var RssProvider = /** @class */ (function () {
         console.log('Hello RssProvider Provider');
     }
     RssProvider.prototype.GetCached = function () {
+        var _this = this;
         console.log('getting data from local cache');
+        this._storage.get('STORAGE_DATA').then(function (res) {
+            if (res) {
+                console.log('here', res);
+                _this.storageData = res;
+            }
+            else {
+                console.log('nada', res);
+            }
+        }).catch(function (err) {
+            console.log('err here', err);
+        });
         return this._storage.get('STORAGE_DATA');
     };
     RssProvider.prototype.GetRSS = function () {
         var _this = this;
+        this.GetCached();
         var params = {
             params: new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["c" /* HttpParams */]().set('rss_url', 'https://www.thehighersidechats.com/feed/podcast').set('api_key', 'yqkqpe8nkirfvdeijgu0arymq7panztpvf56h7hh').set('count', '1000').set('order_by', 'pubDate').set('order_dir', 'desc')
         };
@@ -306,11 +325,12 @@ var RssProvider = /** @class */ (function () {
                         lastPosition: 0,
                         filePath: ''
                     });
-                    if (_this.storageData.podcasts.findIndex(function (i) { return i.pubDate === pcast.pubDate; })) {
+                    console.log(_this.storageData.podcasts.findIndex(function (i) { return i.pubDate === pcast.pubDate; }));
+                    if (_this.storageData.podcasts.findIndex(function (i) { return i.pubDate === pcast.pubDate; }) < 0) {
+                        console.log('found new', pcast);
                         _this.storageData.podcasts.push(pcast);
                     }
                     else {
-                        console.log(podcast.pubDate, 'already downloaded');
                     }
                 });
                 _this._storage.set('STORAGE_DATA', _this.storageData);
@@ -321,7 +341,15 @@ var RssProvider = /** @class */ (function () {
             }
         });
         //return this.cache.loadFromObservable('TEST', request);
-        return this._storage.get('STORAGE_DATA');
+        //return this.storageData;//this._storage.get('STORAGE_DATA');
+        return new Promise(function (resolve, reject) {
+            if (_this.storageData.podcasts) {
+                resolve(_this.storageData);
+            }
+            else {
+                reject('no');
+            }
+        });
     };
     RssProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),

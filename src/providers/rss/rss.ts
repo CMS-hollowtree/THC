@@ -21,11 +21,24 @@ export class RssProvider {
 
   GetCached() {
   	console.log('getting data from local cache');
+    this._storage.get('STORAGE_DATA').then((res) => {
+      
+      if (res) {
+        console.log('here', res);
+        this.storageData = res;
+      }else{
+        console.log('nada', res);
+      }
+      
+    }).catch((err) => {
+      console.log('err here', err);
+    });
   	return this._storage.get('STORAGE_DATA');
   }
 
 
   GetRSS() {
+    this.GetCached();
   	const params = {
   		params: new HttpParams().set('rss_url', 'https://www.thehighersidechats.com/feed/podcast').set('api_key','yqkqpe8nkirfvdeijgu0arymq7panztpvf56h7hh').set('count', '1000').set('order_by', 'pubDate').set('order_dir', 'desc')
     }
@@ -52,10 +65,12 @@ export class RssProvider {
               filePath: ''
             }
             );
-    		  if (this.storageData.podcasts.findIndex(i => i.pubDate === pcast.pubDate)) {
+          console.log(this.storageData.podcasts.findIndex(i => i.pubDate === pcast.pubDate));
+    		  if (this.storageData.podcasts.findIndex(i => i.pubDate === pcast.pubDate) < 0) {
+            console.log('found new', pcast);
             this.storageData.podcasts.push(pcast);
           }else{
-            console.log(podcast.pubDate, 'already downloaded');
+            
           }
     			
     	});
@@ -65,8 +80,14 @@ export class RssProvider {
     	}else{console.log('no data[items]');}
     });
     //return this.cache.loadFromObservable('TEST', request);
-    return this._storage.get('STORAGE_DATA');
-    
+    //return this.storageData;//this._storage.get('STORAGE_DATA');
+    return new Promise((resolve, reject) => {
+      if (this.storageData.podcasts) {
+        resolve(this.storageData);
+      }else{
+        reject('no');
+      }
+    });
 }
 
 }

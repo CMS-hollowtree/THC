@@ -17,8 +17,15 @@ export class HomePage {
 
   constructor(private file: File, private _storage: Storage, public storage: StorageProvider, public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
   	//this.Get_RSS_Feed();
-    this.rssProvider.GetRSS().then((data) => {
-      this.rssDataArray = data;
+    this.rssProvider.GetCached().then((data) => {
+      if (data) {
+        console.log('yes');
+        this.rssDataArray = data;
+      }else{
+        console.log('no');
+        this.Get_RSS_Feed();
+      }
+      
     });
   }
 
@@ -61,15 +68,10 @@ export class HomePage {
   }
 
   Get_RSS_Feed() {
-  	this.rssProvider.GetCached().then(
-  		data => {
-  		this.rssDataArray = data.podcasts;
-  		
-  	}
-  ).catch((err) => {
-    console.log(err);
-    this.rssProvider.GetRSS();
-  });
+    this.rssProvider.GetRSS().then((data) => {
+      console.log('got', data);
+      this.rssDataArray = data;
+    });
   
  }
 
