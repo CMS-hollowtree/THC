@@ -64,7 +64,7 @@ export class RssProvider {
               lastPosition: 0,
               filePath: ''
             }
-            );
+          );
           console.log(this.storageData.podcasts.findIndex(i => i.pubDate === pcast.pubDate));
     		  if (this.storageData.podcasts.findIndex(i => i.pubDate === pcast.pubDate) < 0) {
             console.log('found new', pcast);
@@ -73,14 +73,15 @@ export class RssProvider {
             
           }
     			
-    	});
-      this._storage.set('STORAGE_DATA', this.storageData);
-      console.log('storage data', this.storageData);
+    	  });
+        this._storage.set('STORAGE_DATA', this.storageData);
+        console.log('storage data', this.storageData);
         
-    	}else{console.log('no data[items]');}
+    	}else{
+        console.log('no data[items]');
+      }
     });
-    //return this.cache.loadFromObservable('TEST', request);
-    //return this.storageData;//this._storage.get('STORAGE_DATA');
+    
     return new Promise((resolve, reject) => {
       if (this.storageData.podcasts) {
         resolve(this.storageData);
@@ -88,6 +89,6 @@ export class RssProvider {
         reject('no');
       }
     });
-}
+  }
 
 }

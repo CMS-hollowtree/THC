@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { PodcastPage } from '../pages/podcast/podcast';
 
 import { CacheService } from 'ionic-cache';
 

@@ -6,6 +6,7 @@ import { StorageProvider } from '../../providers/storage/storage';
 import { PlayerProvider } from '../../providers/player/player';
 import { Storage } from '@ionic/storage';
 import { File } from '@ionic-native/file';
+import { PodcastPage } from '../podcast/podcast';
 
 
 @Component({
@@ -31,6 +32,13 @@ export class HomePage {
 
   ionViewDidLoad() {
     
+  }
+
+  itemTapped(event, podcast) {
+    // That's right, we're pushing to ourselves!
+    this.navCtrl.push(PodcastPage, {
+      podcast: podcast
+    });
   }
 
   Search() {
@@ -95,7 +103,7 @@ export class HomePage {
 
  ReFormat(title, part) {
  	if (part == 0) {
- 		return title.split('|')[0];
+ 		return title.split('|')[0].replace('&amp;', '&');
  	}if (part == 1) {
  		return title.split('|')[1].replace('&amp;', '&').split('-')[0];
  	}

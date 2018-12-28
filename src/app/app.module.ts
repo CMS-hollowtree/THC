@@ -8,6 +8,7 @@ import { CacheModule } from 'ionic-cache';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { PodcastPage } from '../pages/podcast/podcast';
 
 import { RssProvider } from '../providers/rss/rss';
 import { HttpModule } from '@angular/http';
@@ -27,7 +28,8 @@ import { Toast } from '@ionic-native/toast';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    PodcastPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { Toast } from '@ionic-native/toast';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    PodcastPage
   ],
   providers: [
     StatusBar,
