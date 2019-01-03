@@ -19,6 +19,8 @@ export class RssProvider {
     console.log('Hello RssProvider Provider');
   }
 
+  
+
   GetCached() {
   	console.log('getting data from local cache');
     this._storage.get('STORAGE_DATA').then((res) => {

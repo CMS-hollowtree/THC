@@ -3,21 +3,21 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>THC Podcasts</ion-title>
+    <ion-title *ngIf="!searching">THC Podcasts</ion-title>
     <ion-searchbar *ngIf="searching"
-      [(ngModel)]="searchInput"
+      [(ngModel)]="searchTerm" 
+      (ionInput)="SetFilteredPodcasts()"
       [showCancelButton]="shouldShowCancel"
-      (ionInput)="SearchFor($event)"
       (ion-cancel)="onCancel($event)">  
     </ion-searchbar>
     <ion-buttons end>
-      <button ion-button (click)="seaching = true;">
+      <button ion-button (click)="Search()">
         <ion-icon name="search" end></ion-icon>
       </button>
-      <button ion-button>
+      <button *ngIf="!searching" ion-button>
         <ion-icon name="funnel" end></ion-icon>
       </button>
-      <button ion-button (click)="ShowActionSheet()">
+      <button *ngIf="!searching" ion-button (click)="ShowActionSheet()">
         <ion-icon name="more" end></ion-icon>
       </button>
     </ion-buttons>
@@ -35,7 +35,7 @@
   </ion-refresher>
   
   <div *ngIf="rssDataArray">
-    <ion-list>
+    <ion-list *ngIf="!searching">
       <ion-item *ngFor="let podcast of rssDataArray.podcasts" text-wrap>
         <ion-thumbnail item-start>
           <img src="assets/imgs/Original_Logo_iTunes3.jpg">
@@ -48,6 +48,20 @@
         <button (click)="itemTapped($event, podcast)" ion-button clear item-end color="green">View</button>
       </ion-item>
     </ion-list> 
+
+    <ion-list *ngIf="searching">
+      <ion-item *ngFor="let podcast of searchResults" text-wrap>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/Original_Logo_iTunes3.jpg">
+        </ion-thumbnail>
+        <h2>
+          {{ReFormat(podcast.title, 1)}}
+        </h2>
+        <p>{{ReFormat(podcast.title, 0)}}</p>
+        <small>{{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}</small>
+        <button (click)="itemTapped($event, podcast)" ion-button clear item-end color="green">View</button>
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>
 

@@ -18,6 +18,8 @@ import { Toast } from '@ionic-native/toast';
 export class HomePage {
   searching: boolean = false;
 	rssDataArray: any = [];
+  searchResults: any = [];
+  searchTerm: string = '';
 
   constructor(public toast: Toast, public actionSheetCtrl: ActionSheetController, private file: File, private _storage: Storage, public storage: StorageProvider, public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
     this.rssProvider.GetCached().then((data) => {
@@ -32,12 +34,24 @@ export class HomePage {
     });
   }
 
+  filterItems(searchTerm){
+    return this.searchResults = this.rssDataArray.podcasts.filter((podcast) => {
+      return podcast.title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1 || podcast.description.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1 || podcast.pubDate.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+    });    
+ 
+  }
+
+  SetFilteredPodcasts() {
+    this.filterItems(this.searchTerm);
+    console.log(this.searchTerm);
+  }
+
   SearchFor(event) {
     console.log(event);
   }
 
   Search() {
-    return this.searching = true;
+    return this.searching = !this.searching;
   }
 
 
