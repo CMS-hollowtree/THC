@@ -4,15 +4,21 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>THC Podcasts</ion-title>
+    <ion-searchbar *ngIf="searching"
+      [(ngModel)]="searchInput"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="SearchFor($event)"
+      (ion-cancel)="onCancel($event)">  
+    </ion-searchbar>
     <ion-buttons end>
-      <button ion-button>
-        <ion-icon (click)="Search()" name="search" end></ion-icon>
+      <button ion-button (click)="seaching = true;">
+        <ion-icon name="search" end></ion-icon>
       </button>
       <button ion-button>
-        <ion-icon (click)="Sort()" name="funnel" end></ion-icon>
+        <ion-icon name="funnel" end></ion-icon>
       </button>
-      <button ion-button>
-        <ion-icon (click)="More()" name="more" end></ion-icon>
+      <button ion-button (click)="ShowActionSheet()">
+        <ion-icon name="more" end></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -27,6 +33,7 @@
       refreshingText="checking for new podcasts...">
     </ion-refresher-content>
   </ion-refresher>
+  
   <div *ngIf="rssDataArray">
     <ion-list>
       <ion-item *ngFor="let podcast of rssDataArray.podcasts" text-wrap>

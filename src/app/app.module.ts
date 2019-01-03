@@ -7,7 +7,7 @@ import { CacheModule } from 'ionic-cache';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { FavoritesPage } from '../pages/favorites/favorites';
 import { PodcastPage } from '../pages/podcast/podcast';
 
 import { RssProvider } from '../providers/rss/rss';
@@ -28,7 +28,7 @@ import { Toast } from '@ionic-native/toast';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
+    FavoritesPage,
     PodcastPage
   ],
   imports: [
@@ -42,7 +42,7 @@ import { Toast } from '@ionic-native/toast';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
+    FavoritesPage,
     PodcastPage
   ],
   providers: [

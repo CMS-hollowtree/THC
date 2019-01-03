@@ -10,11 +10,9 @@
 <ion-content padding class="card-background-page">
 	<ion-card>
       <img src="{{podcast.coverImage}}" class="tinted">
-    
-      
 
       <p class="card-date">
-        {{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}
+        {{podcast.pubDate }}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate }}
       </p>
 
       <h5 class="card-subtitle">
@@ -32,7 +30,11 @@
       <button ion-button  color="green" round align-item-start class="playbtn" (click)="PlayPodcast(podcast.pubDate, podcast.mp3, ReFormat(podcast.title, 0), ReFormat(podcast.title, 1), 0)">
           <ion-icon name='md-play' is-active="false"></ion-icon>
       </button>
-    
     </ion-card>
+    <div text-center style="padding-bottom: 7px;">
+    	0:23
+    	<progress value="20" max="100"></progress>
+    	{{podcast.duration }}
+    </div>
     <ion-item text-wrap inset><p class="newLines">{{ReFormat(podcast.description, 2)}}</p></ion-item>
 </ion-content>

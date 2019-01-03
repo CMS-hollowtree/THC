@@ -4,6 +4,18 @@ page-podcast {
 
 .card-background-page {
 
+  progress {
+    width: 60%;
+    height: 6px;
+    
+    margin: 3px auto;
+    border: none;
+    background: black;
+    border-radius: 50px;
+    padding: 2px;
+    box-shadow: 0 1px 0px 0 rgba(255,255,255,0.2);
+  }
+
   .newLines {
     white-space: pre-wrap;
   }

@@ -74,8 +74,13 @@ export class RssProvider {
           }
     			
     	  });
-        this._storage.set('STORAGE_DATA', this.storageData);
-        console.log('storage data', this.storageData);
+        if (this.storageData.podcasts.length > 1) {
+          this._storage.set('STORAGE_DATA', this.storageData);
+          console.log('storage data', this.storageData);
+        }else{
+          console.log('no podcasts in array, maybe offline');
+        }
+        
         
     	}else{
         console.log('no data[items]');

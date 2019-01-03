@@ -7,6 +7,8 @@ import { PlayerProvider } from '../../providers/player/player';
 import { Storage } from '@ionic/storage';
 import { File } from '@ionic-native/file';
 import { PodcastPage } from '../podcast/podcast';
+import { ActionSheetController } from 'ionic-angular';
+import { Toast } from '@ionic-native/toast';
 
 
 @Component({
@@ -14,9 +16,10 @@ import { PodcastPage } from '../podcast/podcast';
   templateUrl: 'home.html',
 })
 export class HomePage {
+  searching: boolean = false;
 	rssDataArray: any = [];
 
-  constructor(private file: File, private _storage: Storage, public storage: StorageProvider, public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
+  constructor(public toast: Toast, public actionSheetCtrl: ActionSheetController, private file: File, private _storage: Storage, public storage: StorageProvider, public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
   	//this.Get_RSS_Feed();
     this.rssProvider.GetCached().then((data) => {
       if (data) {
@@ -30,47 +33,53 @@ export class HomePage {
     });
   }
 
-  ionViewDidLoad() {
-    
+  SearchFor(event) {
+    console.log(event);
+  }
+
+  Search() {
+    return this.searching = true;
+  }
+
+
+  ShowActionSheet() {
+    console.log('showing action sheet');
+    let actionSheet = this.actionSheetCtrl.create({
+      //title: 'test',
+      buttons: [
+        {
+          text: 'Refresh',
+          handler: () => {
+            console.log('refresh from action sheet');
+            //Toast('Looking for new podcasts...');
+            this.ForceReload();
+          }
+        }
+      ]
+    });
+
+    actionSheet.present();
   }
 
   itemTapped(event, podcast) {
     // That's right, we're pushing to ourselves!
     this.navCtrl.push(PodcastPage, {
-      podcast: podcast
+      podcast: podcast,
+      podcasts: this.rssDataArray
     });
   }
 
-  Search() {
-    console.log('search');
-  }
-
-  addToFav(podcast) {
-    podcast.userData.favorite = true;
-    this._storage.set('STORAGE_DATA', this.rssDataArray);
-
-  }
-
-  IsDownloaded(date) {
-  	date = date.split(' ')[0]+'.mp3';
-  	this.storage.Get(date).then((location) => {
-  		if (location != null) {
-  			return true;
-  		}
-  	});
-
-  }
-
-  Download(url, date) {
-  	this.storage.Download(url, date.split(" ")[0]);
-  }
-
-  ForceReload(refresher) {
+  ForceReload(refresher?) {
     this.rssProvider.GetRSS().then(
   		data => {
   		this.rssDataArray = data;
   		console.log(data);
-  		refresher.complete();
+      if (refresher) {
+        setTimeout(function(){
+            refresher.complete();
+        }, 2000);
+        
+      }
   	}
   );  
   }
@@ -83,23 +92,6 @@ export class HomePage {
   
  }
 
- PlayPodcast(date, url, title, author, image) {
- 	this.player.Stop();
- 	date = date.split(' ')[0]+'.mp3';
- 	console.log('filename', date);
- 	this.storage.IsDownloaded(date).then((res)=> {
- 			let location = this.file.dataDirectory + date;
- 			console.log('found it, playing from local storage', res, location);
- 			this.player.Play(location, title, author, "https://www.thehighersidechats.com/wp-content/uploads/powerpress/Original_Logo_iTunes3.jpg");
- 		}
- 	).catch((err) => {
- 			let location = url;
- 			console.log('not downloaded, streaming from internet', err, location);
- 			this.player.Play(url, title, author, "https://www.thehighersidechats.com/wp-content/uploads/powerpress/Original_Logo_iTunes3.jpg");
- 		
- 	});
- 	
-}
 
  ReFormat(title, part) {
  	if (part == 0) {
