@@ -14,7 +14,7 @@
       <button ion-button (click)="Search()">
         <ion-icon name="search" end></ion-icon>
       </button>
-      <button *ngIf="!searching" ion-button>
+      <button *ngIf="!searching" ion-button (click)="SortItems()">
         <ion-icon name="funnel" end></ion-icon>
       </button>
       <button *ngIf="!searching" ion-button (click)="ShowActionSheet()">
@@ -24,7 +24,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content no-padding class="card-background-page">
+<ion-content>
   <ion-refresher (ionRefresh)="ForceReload($event)">
     <ion-refresher-content
       pullingIcon="arrow-dropdown"
@@ -33,6 +33,10 @@
       refreshingText="checking for new podcasts...">
     </ion-refresher-content>
   </ion-refresher>
+
+  <label text-center padding style="position: absolute; top: 40%; color: grey;" *ngIf="!rssDataArray.podcasts" >
+    no podcasts found...pull down to refresh
+  </label>
   
   <div *ngIf="rssDataArray">
     <ion-list *ngIf="!searching">

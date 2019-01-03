@@ -5,7 +5,6 @@ import { RssProvider } from '../../providers/rss/rss';
 import { StorageProvider } from '../../providers/storage/storage';
 import { PlayerProvider } from '../../providers/player/player';
 import { Storage } from '@ionic/storage';
-import { File } from '@ionic-native/file';
 import { PodcastPage } from '../podcast/podcast';
 import { ActionSheetController } from 'ionic-angular';
 import { Toast } from '@ionic-native/toast';
@@ -21,7 +20,7 @@ export class HomePage {
   searchResults: any = [];
   searchTerm: string = '';
 
-  constructor(public toast: Toast, public actionSheetCtrl: ActionSheetController, private file: File, private _storage: Storage, public storage: StorageProvider, public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
+  constructor(public toast: Toast, public actionSheetCtrl: ActionSheetController, private _storage: Storage, public storage: StorageProvider, public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
     this.rssProvider.GetCached().then((data) => {
       if (data) {
         console.log('yes');
@@ -32,6 +31,10 @@ export class HomePage {
       }
       
     });
+  }
+
+  SortItems() {
+    return this.rssDataArray.podcasts = this.rssDataArray.podcasts.reverse();
   }
 
   filterItems(searchTerm){
@@ -67,7 +70,16 @@ export class HomePage {
             //Toast('Looking for new podcasts...');
             this.ForceReload();
           }
-        }
+        },
+        {
+          text: 'Clear local storage',
+          handler: () => {
+            console.log('clearing local storage');
+            //Toast('Looking for new podcasts...');
+            this._storage.remove('STORAGE_DATA');
+            this.rssDataArray = [];
+            }
+          }
       ]
     });
 
