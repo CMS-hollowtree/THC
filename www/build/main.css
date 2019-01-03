@@ -27975,62 +27975,14 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-page-home {
+page-favorites {
   font-family: "THC" !important;
   font-weight: 400 !important;
 }
 
-page-home .card-background-page .tinted {
-  opacity: 0.4;
-}
-
-page-home .card-background-page ion-card {
-  position: relative;
-  text-align: center;
-  background-color: black;
-}
-
-page-home .card-background-page .card-title {
-  position: absolute;
-  top: 10%;
-  font-size: 2.2em;
-  width: 100%;
-  font-weight: bold;
-  color: #1dc47c;
-}
-
-page-home .card-background-page .card-subtitle {
-  font-size: 1.5em;
-  position: absolute;
-  top: 45%;
-  width: 100%;
-  color: #fff;
-}
-
-page-home .card-background-page .card-date {
-  font-size: 0.8em;
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  color: #fff;
-}
-
-page-home .card-background-page .playbtn {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-}
-
-page-home .card-background-page .downloadbtn {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
-}
-
-page-home .card-background-page .favbtn {
-  position: absolute;
-  top: 0%;
-  right: 0%;
+page-home {
+  font-family: "THC" !important;
+  font-weight: 400 !important;
 }
 
 page-podcast {

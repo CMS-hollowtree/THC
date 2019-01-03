@@ -20,7 +20,6 @@ export class HomePage {
 	rssDataArray: any = [];
 
   constructor(public toast: Toast, public actionSheetCtrl: ActionSheetController, private file: File, private _storage: Storage, public storage: StorageProvider, public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
-  	//this.Get_RSS_Feed();
     this.rssProvider.GetCached().then((data) => {
       if (data) {
         console.log('yes');
@@ -64,8 +63,7 @@ export class HomePage {
   itemTapped(event, podcast) {
     // That's right, we're pushing to ourselves!
     this.navCtrl.push(PodcastPage, {
-      podcast: podcast,
-      podcasts: this.rssDataArray
+      podcast: podcast
     });
   }
 

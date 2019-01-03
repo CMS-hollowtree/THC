@@ -19,16 +19,20 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
+  <label padding style="position: absolute; top: 40%; color: grey;" *ngIf="!hasFavs" text-center>
+    no favorites found...try adding a podcast from the home page!
+  </label>
+  <ion-list *ngIf="favPodcasts">
+    <ion-item *ngFor="let podcast of favPodcasts" text-wrap>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/Original_Logo_iTunes3.jpg">
+      </ion-thumbnail>
+      <h2>
+        {{ReFormat(podcast.title, 1)}}
+      </h2>
+      <p>{{ReFormat(podcast.title, 0)}}</p>
+      <small>{{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}</small>
+      <button (click)="itemTapped($event, podcast)" ion-button clear item-end color="green">View</button>
+    </ion-item>
   </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
 </ion-content>
