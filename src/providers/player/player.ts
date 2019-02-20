@@ -17,10 +17,26 @@ export class PlayerProvider {
     
   }
 
+  GetPlayerStatus() {
+    if(this.playingNow){
+      console.log('playing now yes', this.playingNow)
+      return true;
+    }else{
+      console.log('playing now no', this.playingNow)
+      return false;
+    }
+  }
+
+  Pause() {
+    this.playingNow.pause();
+    this.musicControls.updateIsPlaying(false);
+  }
+
   Stop() {
   	if (this.playingNow) {
   		this.playingNow.stop();
   		this.playingNow.release();
+      this.musicControls.destroy();
   	}
   }
 

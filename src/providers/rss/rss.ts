@@ -42,7 +42,7 @@ export class RssProvider {
   GetRSS() {
     this.GetCached();
   	const params = {
-  		params: new HttpParams().set('rss_url', 'https://www.thehighersidechats.com/feed/podcast').set('api_key','yqkqpe8nkirfvdeijgu0arymq7panztpvf56h7hh').set('count', '1000').set('order_by', 'pubDate').set('order_dir', 'desc')
+  		params: new HttpParams().set('rss_url', 'https://www.thehighersidechats.com/feed/podcast').set('api_key','yqkqpe8nkirfvdeijgu0arymq7panztpvf56h7hh').set('count', '500').set('order_by', 'pubDate').set('order_dir', 'desc')
     }
     let request = this.http.get(this.API_URL, params);
     request.subscribe(data => {

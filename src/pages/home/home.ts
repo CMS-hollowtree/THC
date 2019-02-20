@@ -8,7 +8,7 @@ import { Storage } from '@ionic/storage';
 import { PodcastPage } from '../podcast/podcast';
 import { ActionSheetController } from 'ionic-angular';
 import { Toast } from '@ionic-native/toast';
-
+import { AdMobFree, AdMobFreeBannerConfig, AdMobFreeInterstitialConfig } from '@ionic-native/admob-free';
 
 @Component({
   selector: 'page-home',
@@ -20,7 +20,7 @@ export class HomePage {
   searchResults: any = [];
   searchTerm: string = '';
 
-  constructor(public toast: Toast, public actionSheetCtrl: ActionSheetController, private _storage: Storage, public storage: StorageProvider, public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
+  constructor(private adMob: AdMobFree, public toast: Toast, public actionSheetCtrl: ActionSheetController, private _storage: Storage, public storage: StorageProvider, public cache: CacheService, public navCtrl: NavController, public navParams: NavParams, public rssProvider: RssProvider, public player: PlayerProvider) {
     this.rssProvider.GetCached().then((data) => {
       if (data) {
         console.log('yes');
@@ -31,6 +31,45 @@ export class HomePage {
       }
       
     });
+
+    //this.ShowBannerAd();
+    //this.ShowFullAd();
+  }
+
+  ionViewDidLoad() {
+    this.ShowBannerAd();
+  }
+
+  async ShowBannerAd() {
+      const bannerConfig: AdMobFreeBannerConfig = {
+        id: 'ca-app-pub-3940256099942544/6300978111',
+        //isTesting: false,
+        autoShow: true,
+      }
+
+      this.adMob.banner.config(bannerConfig);
+
+      try {
+        const result = await this.adMob.banner.prepare();
+        console.log(result);
+      }catch (e) {
+        console.log(e);
+      }
+    }
+
+  async ShowFullAd() {
+    try {
+      const interstitialConfig: AdMobFreeInterstitialConfig = {
+        id: 'ca-app-pub-3940256099942544/1033173712',
+        autoShow: true
+      }
+
+      this.adMob.interstitial.config(interstitialConfig);
+      const result = await this.adMob.interstitial.prepare();
+      console.log(result);
+    } catch (e) {
+      console.log(e)
+    }
   }
 
   SortItems() {
@@ -101,7 +140,7 @@ export class HomePage {
       if (refresher) {
         setTimeout(function(){
             refresher.complete();
-        }, 2000);
+        }, 3500);
         
       }
   	}
