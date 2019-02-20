@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.hollowtree.thc" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>THC Podcasts</name>
-    <description>The HigherSide Chat Show Podcast App</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <description>The HigherSide Chat Show - Podcast App</description>
+    <author email="sullivanc28@me.com" href="http://ionicframework.com/">HollowTree</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -96,4 +96,5 @@
     <plugin name="cordova-plugin-network-information" spec="2.0.1" />
     <plugin name="cordova-plugin-admob-free" spec="0.17.0" />
     <engine name="android" spec="6.4.0" />
+    <engine name="browser" spec="5.0.4" />
 </widget>

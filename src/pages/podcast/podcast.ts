@@ -37,7 +37,8 @@ export class PodcastPage {
   async ShowFullAd() {
     try {
       const interstitialConfig: AdMobFreeInterstitialConfig = {
-        id: 'ca-app-pub-3940256099942544/1033173712',
+        //id: 'ca-app-pub-3940256099942544/1033173712',
+        id: 'ca-app-pub-0529413882147962/6907111325',
         autoShow: true
       }
 

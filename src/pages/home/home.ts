@@ -42,7 +42,8 @@ export class HomePage {
 
   async ShowBannerAd() {
       const bannerConfig: AdMobFreeBannerConfig = {
-        id: 'ca-app-pub-3940256099942544/6300978111',
+        //id: 'ca-app-pub-3940256099942544/6300978111',
+        id: 'ca-app-pub-0529413882147962/2320999051',
         //isTesting: false,
         autoShow: true,
       }
@@ -60,7 +61,9 @@ export class HomePage {
   async ShowFullAd() {
     try {
       const interstitialConfig: AdMobFreeInterstitialConfig = {
-        id: 'ca-app-pub-3940256099942544/1033173712',
+        //id: 'ca-app-pub-3940256099942544/1033173712',
+        
+        id: 'ca-app-pub-0529413882147962/6907111325',
         autoShow: true
       }
 
