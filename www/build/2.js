@@ -1,1 +1,39 @@
-webpackJsonp([2],{275:function(a,e,_){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r=_(0),t=(_(2),_(47),_(98));let c=class{};var i=_(216),n=_(217),o=_(218),u=_(219),s=_(220),b=_(221),d=_(222),l=_(223),v=_(224),f=_(225),j=_(12),k=_(17),p=_(146),g=_(48);_.d(e,"FavoritesPageModuleNgFactory",function(){return y});var y=r.W(c,[],function(a){return r._7([r._8(512,r.i,r.S,[[8,[i.a,n.a,o.a,u.a,s.a,b.a,d.a,l.a,v.a,f.a]],[3,r.i],r.s]),r._8(4608,j.k,j.j,[r.r,[2,j.t]]),r._8(4608,k.k,k.k,[]),r._8(4608,k.c,k.c,[]),r._8(512,j.b,j.b,[]),r._8(512,k.j,k.j,[]),r._8(512,k.d,k.d,[]),r._8(512,k.i,k.i,[]),r._8(512,p.a,p.a,[]),r._8(512,p.b,p.b,[]),r._8(512,c,c,[]),r._8(256,g.a,t.a,[])])})}});
+webpackJsonp([2],{
+
+/***/ 306:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FavoritesPageModule", function() { return FavoritesPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__favorites__ = __webpack_require__(113);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+let FavoritesPageModule = class FavoritesPageModule {
+};
+FavoritesPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__favorites__["a" /* FavoritesPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__favorites__["a" /* FavoritesPage */]),
+        ],
+    })
+], FavoritesPageModule);
+
+//# sourceMappingURL=favorites.module.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=2.js.map

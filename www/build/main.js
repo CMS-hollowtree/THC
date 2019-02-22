@@ -1,1 +1,1055 @@
-webpackJsonp([3],{157:function(l,n){function t(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}t.keys=function(){return[]},t.resolve=t,l.exports=t,t.id=157},189:function(l,n,t){function a(l){var n=u[l];return n?t.e(n[1]).then(function(){return t(n[0])}):Promise.reject(new Error("Cannot find module '"+l+"'."))}var u={"../pages/favorites/favorites.module.ngfactory":[275,2],"../pages/podcast/podcast.module.ngfactory":[277,1]};a.keys=function(){return Object.keys(u)},a.id=189,l.exports=a},225:function(l,n,t){"use strict";function a(l){return i._21(0,[(l()(),i.Z(0,0,null,null,1,"label",[["padding",""],["style","position: absolute; top: 40%; color: grey;"],["text-center",""]],null,null,null,null,null)),(l()(),i._19(-1,null,["\n    no favorites found...try adding a podcast from the home page!\n  "]))],null,null)}function u(l){return i._21(0,[(l()(),i.Z(0,0,null,null,28,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,s.b,s.a)),i.Y(1,1097728,null,3,r.a,[c.a,_.a,i.j,i.z,[2,d.a]],null,null),i._17(335544320,3,{contentLabel:0}),i._17(603979776,4,{_buttons:1}),i._17(603979776,5,{_icons:1}),i.Y(5,16384,null,0,h.a,[],null,null),(l()(),i._19(-1,2,["\n      "])),(l()(),i.Z(7,0,null,0,4,"ion-thumbnail",[["item-start",""]],null,null,null,null,null)),i.Y(8,16384,null,0,p.a,[],null,null),(l()(),i._19(-1,null,["\n        "])),(l()(),i.Z(10,0,null,null,0,"img",[["src","assets/imgs/Original_Logo_iTunes3.jpg"]],null,null,null,null,null)),(l()(),i._19(-1,null,["\n      "])),(l()(),i._19(-1,2,["\n      "])),(l()(),i.Z(13,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),i._19(14,null,["\n        ","\n      "])),(l()(),i._19(-1,2,["\n      "])),(l()(),i.Z(16,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),i._19(17,null,["",""])),(l()(),i._19(-1,2,["\n      "])),(l()(),i.Z(19,0,null,2,4,"small",[],null,null,null,null,null)),(l()(),i._19(20,null,["","/","/",""])),i._13(0,g.r,[]),i._13(0,g.r,[]),i._13(0,g.r,[]),(l()(),i._19(-1,2,["\n      "])),(l()(),i.Z(25,0,null,4,2,"button",[["clear",""],["color","green"],["ion-button",""],["item-end",""]],null,[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==l.component.itemTapped(t,l.context.$implicit)&&a}return a},f.b,f.a)),i.Y(26,1097728,[[4,4]],0,m.a,[[8,""],_.a,i.j,i.z],{color:[0,"color"],clear:[1,"clear"]},null),(l()(),i._19(-1,0,["View"])),(l()(),i._19(-1,2,["\n    "]))],function(l,n){l(n,26,0,"green","")},function(l,n){var t=n.component;l(n,14,0,t.ReFormat(n.context.$implicit.title,1));l(n,17,0,t.ReFormat(n.context.$implicit.title,0));l(n,20,0,i._20(n,20,0,i._11(n,21).transform(n.context.$implicit.pubDate,5,7)),i._20(n,20,1,i._11(n,22).transform(n.context.$implicit.pubDate,8,10)),i._20(n,20,2,i._11(n,23).transform(n.context.$implicit.pubDate,0,4)))})}function e(l){return i._21(0,[(l()(),i.Z(0,0,null,null,5,"ion-list",[],null,null,null,null,null)),i.Y(1,16384,null,0,b.a,[_.a,i.j,i.z,v.a,y.l,w.a],null,null),(l()(),i._19(-1,null,["\n    "])),(l()(),i.U(16777216,null,null,1,null,u)),i.Y(4,802816,null,0,g.h,[i.I,i.F,i.p],{ngForOf:[0,"ngForOf"]},null),(l()(),i._19(-1,null,["\n  "]))],function(l,n){l(n,4,0,n.component.favPodcasts)},null)}function o(l){return i._21(0,[(l()(),i.Z(0,0,null,null,46,"ion-header",[],null,null,null,null,null)),i.Y(1,16384,null,0,Z.a,[_.a,i.j,i.z,[2,Y.a]],null,null),(l()(),i._19(-1,null,["\n  "])),(l()(),i.Z(3,0,null,null,42,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,P.b,P.a)),i.Y(4,49152,null,0,D.a,[I.a,[2,Y.a],[2,k.a],_.a,i.j,i.z],null,null),(l()(),i._19(-1,3,["\n    "])),(l()(),i.Z(6,0,null,0,8,"button",[["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==i._11(l,8).toggle()&&a}return a},f.b,f.a)),i.Y(7,1097728,[[1,4]],0,m.a,[[8,""],_.a,i.j,i.z],null,null),i.Y(8,1064960,null,0,j.a,[S.a,[2,Y.a],[2,m.a],[2,D.a]],{menuToggle:[0,"menuToggle"]},null),i.Y(9,16384,null,1,F.a,[_.a,i.j,i.z,[2,z.a],[2,D.a]],null,null),i._17(603979776,1,{_buttons:1}),(l()(),i._19(-1,0,["\n      "])),(l()(),i.Z(12,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),i.Y(13,147456,null,0,R.a,[_.a,i.j,i.z],{name:[0,"name"]},null),(l()(),i._19(-1,0,["\n    "])),(l()(),i._19(-1,3,["\n    "])),(l()(),i.Z(16,0,null,3,2,"ion-title",[],null,null,null,C.b,C.a)),i.Y(17,49152,null,0,T.a,[_.a,i.j,i.z,[2,z.a],[2,D.a]],null,null),(l()(),i._19(-1,0,["Favorites"])),(l()(),i._19(-1,3,["\n    "])),(l()(),i.Z(20,0,null,2,24,"ion-buttons",[["end",""]],null,null,null,null,null)),i.Y(21,16384,null,1,F.a,[_.a,i.j,i.z,[2,z.a],[2,D.a]],null,null),i._17(603979776,2,{_buttons:1}),(l()(),i._19(-1,null,["\n      "])),(l()(),i.Z(24,0,null,null,5,"button",[["ion-button",""]],null,null,null,f.b,f.a)),i.Y(25,1097728,[[2,4]],0,m.a,[[8,""],_.a,i.j,i.z],null,null),(l()(),i._19(-1,0,["\n        "])),(l()(),i.Z(27,0,null,0,1,"ion-icon",[["end",""],["name","search"],["role","img"]],[[2,"hide",null]],[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==l.component.Search()&&a}return a},null,null)),i.Y(28,147456,null,0,R.a,[_.a,i.j,i.z],{name:[0,"name"]},null),(l()(),i._19(-1,0,["\n      "])),(l()(),i._19(-1,null,["\n      "])),(l()(),i.Z(31,0,null,null,5,"button",[["ion-button",""]],null,null,null,f.b,f.a)),i.Y(32,1097728,[[2,4]],0,m.a,[[8,""],_.a,i.j,i.z],null,null),(l()(),i._19(-1,0,["\n        "])),(l()(),i.Z(34,0,null,0,1,"ion-icon",[["end",""],["name","funnel"],["role","img"]],[[2,"hide",null]],[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==l.component.Sort()&&a}return a},null,null)),i.Y(35,147456,null,0,R.a,[_.a,i.j,i.z],{name:[0,"name"]},null),(l()(),i._19(-1,0,["\n      "])),(l()(),i._19(-1,null,["\n      "])),(l()(),i.Z(38,0,null,null,5,"button",[["ion-button",""]],null,null,null,f.b,f.a)),i.Y(39,1097728,[[2,4]],0,m.a,[[8,""],_.a,i.j,i.z],null,null),(l()(),i._19(-1,0,["\n        "])),(l()(),i.Z(41,0,null,0,1,"ion-icon",[["end",""],["name","more"],["role","img"]],[[2,"hide",null]],[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==l.component.More()&&a}return a},null,null)),i.Y(42,147456,null,0,R.a,[_.a,i.j,i.z],{name:[0,"name"]},null),(l()(),i._19(-1,0,["\n      "])),(l()(),i._19(-1,null,["\n    "])),(l()(),i._19(-1,3,["\n  "])),(l()(),i._19(-1,null,["\n"])),(l()(),i._19(-1,null,["\n\n"])),(l()(),i.Z(48,0,null,null,8,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,x.b,x.a)),i.Y(49,4374528,null,0,A.a,[_.a,v.a,w.a,i.j,i.z,I.a,O.a,i.u,[2,Y.a],[2,k.a]],null,null),(l()(),i._19(-1,1,["\n  "])),(l()(),i.U(16777216,null,1,1,null,a)),i.Y(52,16384,null,0,g.i,[i.I,i.F],{ngIf:[0,"ngIf"]},null),(l()(),i._19(-1,1,["\n  "])),(l()(),i.U(16777216,null,1,1,null,e)),i.Y(55,16384,null,0,g.i,[i.I,i.F],{ngIf:[0,"ngIf"]},null),(l()(),i._19(-1,1,["\n"])),(l()(),i._19(-1,null,["\n"]))],function(l,n){var t=n.component;l(n,8,0,"");l(n,13,0,"menu");l(n,28,0,"search");l(n,35,0,"funnel");l(n,42,0,"more");l(n,52,0,!t.hasFavs);l(n,55,0,t.favPodcasts)},function(l,n){l(n,3,0,i._11(n,4)._hidden,i._11(n,4)._sbPadding);l(n,6,0,i._11(n,8).isHidden);l(n,12,0,i._11(n,13)._hidden);l(n,27,0,i._11(n,28)._hidden);l(n,34,0,i._11(n,35)._hidden);l(n,41,0,i._11(n,42)._hidden);l(n,48,0,i._11(n,49).statusbarPadding,i._11(n,49)._hasRefresher)})}t.d(n,"a",function(){return M});var i=t(0),s=t(68),r=t(14),c=t(13),_=t(1),d=t(29),h=t(44),p=t(92),g=t(12),f=t(27),m=t(16),b=t(45),v=t(4),y=t(6),w=t(9),Z=t(70),Y=t(5),P=t(124),D=t(26),I=t(7),k=t(19),j=t(85),S=t(22),F=t(71),z=t(40),R=t(23),C=t(125),T=t(55),x=t(93),A=t(21),O=t(24),L=t(98),G=t(52),U=t(11),B=i.X({encapsulation:2,styles:[],data:{}}),M=i.V("page-favorites",L.a,function(l){return i._21(0,[(l()(),i.Z(0,0,null,null,1,"page-favorites",[],null,null,null,o,B)),i.Y(1,49152,null,0,L.a,[G.a,k.a,U.a],null,null)],null,null)},{},{},[])},226:function(l,n,t){"use strict";function a(l){return s._21(0,[(l()(),s.Z(0,0,null,null,1,"ion-icon",[["color","danger"],["is-active","true"],["name","heart"],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Y(1,147456,null,0,r.a,[c.a,s.j,s.z],{color:[0,"color"],name:[1,"name"]},null)],function(l,n){l(n,1,0,"danger","heart")},function(l,n){l(n,0,0,s._11(n,1)._hidden)})}function u(l){return s._21(0,[(l()(),s.Z(0,0,null,null,1,"ion-icon",[["color","light"],["is-active","false"],["name","heart"],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Y(1,147456,null,0,r.a,[c.a,s.j,s.z],{color:[0,"color"],name:[1,"name"]},null)],function(l,n){l(n,1,0,"light","heart")},function(l,n){l(n,0,0,s._11(n,1)._hidden)})}function e(l){return s._21(0,[(l()(),s.Z(0,0,null,null,5,"button",[["color","green"],["ion-fab",""]],null,[[null,"click"]],function(l,n,t){var a=!0,u=l.component;if("click"===n){a=!1!==u.PlayPodcast(u.podcast,u.ReFormat(u.podcast.title,1))&&a}return a},_.b,_.a)),s.Y(1,49152,[[2,4]],0,d.a,[c.a,s.j,s.z],{color:[0,"color"]},null),(l()(),s._19(-1,0,["\n        "])),(l()(),s.Z(3,0,null,0,1,"ion-icon",[["name","md-play"],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Y(4,147456,null,0,r.a,[c.a,s.j,s.z],{name:[0,"name"]},null),(l()(),s._19(-1,0,["\n      "]))],function(l,n){l(n,1,0,"green");l(n,4,0,"md-play")},function(l,n){l(n,3,0,s._11(n,4)._hidden)})}function o(l){return s._21(0,[(l()(),s.Z(0,0,null,null,5,"button",[["color","danger"],["ion-fab",""]],null,[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==l.component.StopPodcast()&&a}return a},_.b,_.a)),s.Y(1,49152,[[2,4]],0,d.a,[c.a,s.j,s.z],{color:[0,"color"]},null),(l()(),s._19(-1,0,["\n        "])),(l()(),s.Z(3,0,null,0,1,"ion-icon",[["name","square"],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Y(4,147456,null,0,r.a,[c.a,s.j,s.z],{name:[0,"name"]},null),(l()(),s._19(-1,0,["\n      "]))],function(l,n){l(n,1,0,"danger");l(n,4,0,"square")},function(l,n){l(n,3,0,s._11(n,4)._hidden)})}function i(l){return s._21(0,[(l()(),s.Z(0,0,null,null,25,"ion-header",[],null,null,null,null,null)),s.Y(1,16384,null,0,h.a,[c.a,s.j,s.z,[2,p.a]],null,null),(l()(),s._19(-1,null,["\n\n  "])),(l()(),s.Z(3,0,null,null,21,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,g.b,g.a)),s.Y(4,49152,null,0,f.a,[m.a,[2,p.a],[2,b.a],c.a,s.j,s.z],null,null),(l()(),s._19(-1,3,["\n    "])),(l()(),s.Z(6,0,null,3,2,"ion-title",[],null,null,null,v.b,v.a)),s.Y(7,49152,null,0,y.a,[c.a,s.j,s.z,[2,w.a],[2,f.a]],null,null),(l()(),s._19(8,0,["",""])),(l()(),s._19(-1,3,["\n    "])),(l()(),s.Z(10,0,null,2,13,"ion-buttons",[["end",""]],null,null,null,null,null)),s.Y(11,16384,null,1,Z.a,[c.a,s.j,s.z,[2,w.a],[2,f.a]],null,null),s._17(603979776,1,{_buttons:1}),(l()(),s._19(-1,null,["\n    "])),(l()(),s.Z(14,0,null,null,8,"button",[["class","favbtn"],["clear",""],["icon-only",""],["ion-button",""],["round",""]],null,[[null,"click"]],function(l,n,t){var a=!0,u=l.component;if("click"===n){a=!1!==u.addToFav(u.podcast)&&a}return a},Y.b,Y.a)),s.Y(15,1097728,[[1,4]],0,P.a,[[8,""],c.a,s.j,s.z],{clear:[0,"clear"],round:[1,"round"]},null),(l()(),s._19(-1,0,["\n      "])),(l()(),s.U(16777216,null,0,1,null,a)),s.Y(18,16384,null,0,D.i,[s.I,s.F],{ngIf:[0,"ngIf"]},null),(l()(),s._19(-1,0,["\n      "])),(l()(),s.U(16777216,null,0,1,null,u)),s.Y(21,16384,null,0,D.i,[s.I,s.F],{ngIf:[0,"ngIf"]},null),(l()(),s._19(-1,0,["\n    "])),(l()(),s._19(-1,null,["\n  "])),(l()(),s._19(-1,3,["\n  "])),(l()(),s._19(-1,null,["\n\n"])),(l()(),s._19(-1,null,["\n\n\n"])),(l()(),s.Z(27,0,null,null,57,"ion-content",[["class","card-background-page"],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,I.b,I.a)),s.Y(28,4374528,null,0,k.a,[c.a,j.a,S.a,s.j,s.z,m.a,F.a,s.u,[2,p.a],[2,b.a]],null,null),(l()(),s._19(-1,1,["\n\t"])),(l()(),s.Z(30,0,null,1,20,"ion-card",[],null,null,null,null,null)),s.Y(31,16384,null,0,z.a,[c.a,s.j,s.z],null,null),(l()(),s._19(-1,null,["\n      "])),(l()(),s.Z(33,0,null,null,0,"img",[["class","tinted"]],[[8,"src",4]],null,null,null,null)),(l()(),s._19(-1,null,["\n\n      "])),(l()(),s.Z(35,0,null,null,4,"p",[["class","card-date"]],null,null,null,null,null)),(l()(),s._19(36,null,["\n        ","/","/","\n      "])),s._13(0,D.r,[]),s._13(0,D.r,[]),s._13(0,D.r,[]),(l()(),s._19(-1,null,["\n\n      "])),(l()(),s.Z(41,0,null,null,1,"h5",[["class","card-subtitle"]],null,null,null,null,null)),(l()(),s._19(42,null,["\n        ","\n      "])),(l()(),s._19(-1,null,["\n\n      "])),(l()(),s.Z(44,0,null,null,5,"button",[["class","downloadbtn"],["color","light"],["ion-button",""],["round",""],["style","display: none;"]],null,[[null,"click"]],function(l,n,t){var a=!0,u=l.component;if("click"===n){a=!1!==u.Download(u.podcast.mp3,u.podcast.pubDate)&&a}return a},Y.b,Y.a)),s.Y(45,1097728,null,0,P.a,[[8,""],c.a,s.j,s.z],{color:[0,"color"],round:[1,"round"]},null),(l()(),s._19(-1,0,["\n        "])),(l()(),s.Z(47,0,null,0,1,"ion-icon",[["is-active","false"],["name","md-download"],["role","img"]],[[2,"hide",null]],null,null,null,null)),s.Y(48,147456,null,0,r.a,[c.a,s.j,s.z],{name:[0,"name"]},null),(l()(),s._19(-1,0,["\n      "])),(l()(),s._19(-1,null,["\n    "])),(l()(),s._19(-1,1,["\n\n    "])),(l()(),s.Z(52,0,null,0,10,"ion-fab",[["bottom",""],["right",""]],null,null,null,R.b,R.a)),s.Y(53,1228800,null,2,C.a,[j.a],null,null),s._17(603979776,2,{_mainButton:0}),s._17(603979776,3,{_fabLists:1}),(l()(),s._19(-1,0,["\n      "])),(l()(),s.U(16777216,null,0,1,null,e)),s.Y(58,16384,null,0,D.i,[s.I,s.F],{ngIf:[0,"ngIf"]},null),(l()(),s._19(-1,0,["\n      "])),(l()(),s.U(16777216,null,0,1,null,o)),s.Y(61,16384,null,0,D.i,[s.I,s.F],{ngIf:[0,"ngIf"]},null),(l()(),s._19(-1,0,["\n    "])),(l()(),s._19(-1,1,["\n      \n    "])),(l()(),s.Z(64,0,null,1,10,"ion-item",[["class","item item-block"],["no-lines",""]],null,null,null,T.b,T.a)),s.Y(65,1097728,null,3,x.a,[A.a,c.a,s.j,s.z,[2,O.a]],null,null),s._17(335544320,4,{contentLabel:0}),s._17(603979776,5,{_buttons:1}),s._17(603979776,6,{_icons:1}),s.Y(69,16384,null,0,L.a,[],null,null),(l()(),s._19(-1,2,["\n    \t"])),(l()(),s.Z(71,0,null,0,2,"div",[["item-left",""]],null,null,null,null,null)),(l()(),s._19(72,null,["Podcast Length ",""])),s._13(0,D.r,[]),(l()(),s._19(-1,2,["\n    "])),(l()(),s._19(-1,1,["\n    "])),(l()(),s.Z(76,0,null,1,7,"ion-item",[["class","item item-block"],["inset",""],["no-lines",""],["text-wrap",""]],null,null,null,T.b,T.a)),s.Y(77,1097728,null,3,x.a,[A.a,c.a,s.j,s.z,[2,O.a]],null,null),s._17(335544320,7,{contentLabel:0}),s._17(603979776,8,{_buttons:1}),s._17(603979776,9,{_icons:1}),s.Y(81,16384,null,0,L.a,[],null,null),(l()(),s.Z(82,0,null,2,1,"p",[["class","newLines"]],null,null,null,null,null)),(l()(),s._19(83,null,["",""])),(l()(),s._19(-1,1,["\n"])),(l()(),s._19(-1,null,["\n"]))],function(l,n){var t=n.component;l(n,15,0,"","");l(n,18,0,t.podcast.userData.favorite);l(n,21,0,!t.podcast.userData.favorite);l(n,45,0,"light","");l(n,48,0,"md-download");l(n,58,0,!t.isPlaying);l(n,61,0,t.isPlaying)},function(l,n){var t=n.component;l(n,3,0,s._11(n,4)._hidden,s._11(n,4)._sbPadding);l(n,8,0,t.ReFormat(t.podcast.title,0));l(n,27,0,s._11(n,28).statusbarPadding,s._11(n,28)._hasRefresher);l(n,33,0,s._2(1,"",t.podcast.coverImage,""));l(n,36,0,s._20(n,36,0,s._11(n,37).transform(t.podcast.pubDate,5,7)),s._20(n,36,1,s._11(n,38).transform(t.podcast.pubDate,8,10)),s._20(n,36,2,s._11(n,39).transform(t.podcast.pubDate,0,4)));l(n,42,0,t.ReFormat(t.podcast.title,1));l(n,47,0,s._11(n,48)._hidden);l(n,72,0,s._20(n,72,0,s._11(n,73).transform(t.podcast.duration,0,4)));l(n,83,0,t.ReFormat(t.podcast.description,2))})}t.d(n,"a",function(){return X});var s=t(0),r=t(23),c=t(1),_=t(260),d=t(51),h=t(70),p=t(5),g=t(124),f=t(26),m=t(7),b=t(19),v=t(125),y=t(55),w=t(40),Z=t(71),Y=t(27),P=t(16),D=t(12),I=t(93),k=t(21),j=t(4),S=t(9),F=t(24),z=t(110),R=t(261),C=t(81),T=t(68),x=t(14),A=t(13),O=t(29),L=t(44),G=t(73),U=t(54),B=t(53),M=t(46),N=t(38),$=t(11),E=s.X({encapsulation:2,styles:[],data:{}}),X=s.V("page-podcast",G.a,function(l){return s._21(0,[(l()(),s.Z(0,0,null,null,1,"page-podcast",[],null,null,null,i,E)),s.Y(1,49152,null,0,G.a,[U.a,B.a,M.a,N.b,b.a,$.a],null,null)],null,null)},{},{},[])},227:function(l,n,t){"use strict";function a(l){return b._21(0,[(l()(),b.Z(0,0,null,null,29,"div",[["class","splash"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\n\t"])),(l()(),b.Z(2,0,null,null,26,"div",[["class","demo"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t  "])),(l()(),b.Z(4,0,null,null,3,"div",[["class","circle"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t    "])),(l()(),b.Z(6,0,null,null,0,"div",[["class","inner"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t  "])),(l()(),b._19(-1,null,["\n\t  "])),(l()(),b.Z(9,0,null,null,3,"div",[["class","circle"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t    "])),(l()(),b.Z(11,0,null,null,0,"div",[["class","inner"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t  "])),(l()(),b._19(-1,null,["\n\t  "])),(l()(),b.Z(14,0,null,null,3,"div",[["class","circle"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t    "])),(l()(),b.Z(16,0,null,null,0,"div",[["class","inner"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t  "])),(l()(),b._19(-1,null,["\n\t  "])),(l()(),b.Z(19,0,null,null,3,"div",[["class","circle"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t    "])),(l()(),b.Z(21,0,null,null,0,"div",[["class","inner"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t  "])),(l()(),b._19(-1,null,["\n\t  "])),(l()(),b.Z(24,0,null,null,3,"div",[["class","circle"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t    "])),(l()(),b.Z(26,0,null,null,0,"div",[["class","inner"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n\t  "])),(l()(),b._19(-1,null,["\n\t"])),(l()(),b._19(-1,null,["\n\t\n"]))],null,null)}function u(l){return b._21(0,[(l()(),b.Z(0,0,null,null,10,"button",[["class","item item-block"],["ion-item",""],["menuClose",""]],null,[[null,"click"]],function(l,n,t){var a=!0,u=l.component;if("click"===n){a=!1!==b._11(l,6).close()&&a}if("click"===n){a=!1!==u.openPage(l.context.$implicit)&&a}return a},J.b,J.a)),b.Y(1,1097728,null,3,K.a,[W.a,Q.a,b.j,b.z,[2,ll.a]],null,null),b._17(335544320,4,{contentLabel:0}),b._17(603979776,5,{_buttons:1}),b._17(603979776,6,{_icons:1}),b.Y(5,16384,null,0,nl.a,[],null,null),b.Y(6,16384,null,0,tl.a,[al.a],{menuClose:[0,"menuClose"]},null),(l()(),b._19(-1,2,["\n        \n        "])),(l()(),b.Z(8,0,null,2,1,"label",[["style","padding-left: 10%;"]],null,null,null,null,null)),(l()(),b._19(9,null,["",""])),(l()(),b._19(-1,2,["\n      "]))],function(l,n){l(n,6,0,"")},function(l,n){l(n,9,0,n.context.$implicit.title)})}function e(l){return b._21(0,[b._17(402653184,1,{nav:0}),(l()(),b._19(-1,null,["\n"])),(l()(),b.U(16777216,null,null,1,null,a)),b.Y(3,16384,null,0,ul.i,[b.I,b.F],{ngIf:[0,"ngIf"]},null),(l()(),b._19(-1,null,["\n\n"])),(l()(),b.Z(5,0,null,null,16,"ion-menu",[["role","navigation"]],null,null,null,el.b,el.a)),b._15(6144,null,ol.a,null,[il.a]),b.Y(7,245760,null,2,il.a,[al.a,b.j,Q.a,sl.a,b.z,rl.a,cl.l,_l.a,dl.a],{content:[0,"content"]},null),b._17(335544320,2,{menuContent:0}),b._17(335544320,3,{menuNav:0}),(l()(),b._19(-1,0,["\n  \n  "])),(l()(),b.Z(11,0,null,0,9,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,hl.b,hl.a)),b.Y(12,4374528,[[2,4]],0,pl.a,[Q.a,sl.a,_l.a,b.j,b.z,dl.a,rl.a,b.u,[2,gl.a],[2,fl.a]],null,null),(l()(),b._19(-1,1,["\n    "])),(l()(),b.Z(14,0,null,1,5,"ion-list",[["no-lines",""]],null,null,null,null,null)),b.Y(15,16384,null,0,ml.a,[Q.a,b.j,b.z,sl.a,cl.l,_l.a],null,null),(l()(),b._19(-1,null,["\n      "])),(l()(),b.U(16777216,null,null,1,null,u)),b.Y(18,802816,null,0,ul.h,[b.I,b.F,b.p],{ngForOf:[0,"ngForOf"]},null),(l()(),b._19(-1,null,["\n    "])),(l()(),b._19(-1,1,["\n  "])),(l()(),b._19(-1,0,["\n\n"])),(l()(),b._19(-1,null,["\n\n"])),(l()(),b._19(-1,null,["\n"])),(l()(),b.Z(24,0,null,null,2,"ion-nav",[["swipeBackEnabled","false"]],null,null,null,bl.b,bl.a)),b._15(6144,null,ol.a,null,[vl.a]),b.Y(26,4374528,[[1,4],["content",4]],0,vl.a,[[2,gl.a],[2,fl.a],dl.a,Q.a,sl.a,b.j,b.u,b.z,b.i,cl.l,yl.a,[2,wl.a],_l.a,b.k],{swipeBackEnabled:[0,"swipeBackEnabled"],root:[1,"root"]},null)],function(l,n){var t=n.component;l(n,3,0,t.showSplash);l(n,7,0,b._11(n,26));l(n,18,0,t.pages);l(n,26,0,"false",t.rootPage)},function(l,n){l(n,11,0,b._11(n,12).statusbarPadding,b._11(n,12)._hasRefresher)})}function o(l){return b._21(0,[(l()(),b.Z(0,0,null,null,2,"ion-title",[],null,null,null,Dl.b,Dl.a)),b.Y(1,49152,null,0,Il.a,[Q.a,b.j,b.z,[2,kl.a],[2,jl.a]],null,null),(l()(),b._19(-1,0,["THC Podcasts"]))],null,null)}function i(l){return b._21(0,[(l()(),b.Z(0,0,null,null,5,"ion-searchbar",[],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null]],[[null,"ngModelChange"],[null,"ionInput"],[null,"ion-cancel"]],function(l,n,t){var a=!0,u=l.component;if("ngModelChange"===n){a=!1!==(u.searchTerm=t)&&a}if("ionInput"===n){a=!1!==u.SetFilteredPodcasts()&&a}if("ion-cancel"===n){a=!1!==u.onCancel(t)&&a}return a},Sl.b,Sl.a)),b.Y(1,671744,null,0,Fl.h,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),b._15(2048,null,Fl.f,null,[Fl.h]),b.Y(3,16384,null,0,Fl.g,[Fl.f],null,null),b.Y(4,1294336,null,0,zl.a,[Q.a,sl.a,b.j,b.z,[2,Fl.f]],{showCancelButton:[0,"showCancelButton"]},{ionInput:"ionInput"}),(l()(),b._19(-1,null,["  \n    "]))],function(l,n){var t=n.component;l(n,1,0,t.searchTerm);l(n,4,0,t.shouldShowCancel)},function(l,n){l(n,0,1,[b._11(n,3).ngClassUntouched,b._11(n,3).ngClassTouched,b._11(n,3).ngClassPristine,b._11(n,3).ngClassDirty,b._11(n,3).ngClassValid,b._11(n,3).ngClassInvalid,b._11(n,3).ngClassPending,b._11(n,4)._animated,b._11(n,4)._value,b._11(n,4)._isActive,b._11(n,4)._showCancelButton,b._11(n,4)._shouldAlignLeft,b._11(n,4)._isFocus])})}function s(l){return b._21(0,[(l()(),b.Z(0,0,null,null,5,"button",[["ion-button",""]],null,[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==l.component.SortItems()&&a}return a},Rl.b,Rl.a)),b.Y(1,1097728,[[2,4]],0,Cl.a,[[8,""],Q.a,b.j,b.z],null,null),(l()(),b._19(-1,0,["\n        "])),(l()(),b.Z(3,0,null,0,1,"ion-icon",[["end",""],["name","funnel"],["role","img"]],[[2,"hide",null]],null,null,null,null)),b.Y(4,147456,null,0,Tl.a,[Q.a,b.j,b.z],{name:[0,"name"]},null),(l()(),b._19(-1,0,["\n      "]))],function(l,n){l(n,4,0,"funnel")},function(l,n){l(n,3,0,b._11(n,4)._hidden)})}function r(l){return b._21(0,[(l()(),b.Z(0,0,null,null,5,"button",[["ion-button",""]],null,[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==l.component.ShowActionSheet()&&a}return a},Rl.b,Rl.a)),b.Y(1,1097728,[[2,4]],0,Cl.a,[[8,""],Q.a,b.j,b.z],null,null),(l()(),b._19(-1,0,["\n        "])),(l()(),b.Z(3,0,null,0,1,"ion-icon",[["end",""],["name","more"],["role","img"]],[[2,"hide",null]],null,null,null,null)),b.Y(4,147456,null,0,Tl.a,[Q.a,b.j,b.z],{name:[0,"name"]},null),(l()(),b._19(-1,0,["\n      "]))],function(l,n){l(n,4,0,"more")},function(l,n){l(n,3,0,b._11(n,4)._hidden)})}function c(l){return b._21(0,[(l()(),b.Z(0,0,null,null,1,"label",[["padding",""],["style","position: absolute; top: 40%; color: grey;"],["text-center",""]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n    no podcasts found...pull down to refresh\n  "]))],null,null)}function _(l){return b._21(0,[(l()(),b.Z(0,0,null,null,28,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,J.b,J.a)),b.Y(1,1097728,null,3,K.a,[W.a,Q.a,b.j,b.z,[2,ll.a]],null,null),b._17(335544320,3,{contentLabel:0}),b._17(603979776,4,{_buttons:1}),b._17(603979776,5,{_icons:1}),b.Y(5,16384,null,0,nl.a,[],null,null),(l()(),b._19(-1,2,["\n        "])),(l()(),b.Z(7,0,null,0,4,"ion-thumbnail",[["item-start",""]],null,null,null,null,null)),b.Y(8,16384,null,0,xl.a,[],null,null),(l()(),b._19(-1,null,["\n          "])),(l()(),b.Z(10,0,null,null,0,"img",[["src","assets/imgs/Original_Logo_iTunes3.jpg"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n        "])),(l()(),b._19(-1,2,["\n        "])),(l()(),b.Z(13,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),b._19(14,null,["\n          ","\n        "])),(l()(),b._19(-1,2,["\n        "])),(l()(),b.Z(16,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),b._19(17,null,["",""])),(l()(),b._19(-1,2,["\n        "])),(l()(),b.Z(19,0,null,2,4,"small",[],null,null,null,null,null)),(l()(),b._19(20,null,["","/","/",""])),b._13(0,ul.r,[]),b._13(0,ul.r,[]),b._13(0,ul.r,[]),(l()(),b._19(-1,2,["\n        "])),(l()(),b.Z(25,0,null,4,2,"button",[["clear",""],["color","green"],["ion-button",""],["item-end",""]],null,[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==l.component.itemTapped(t,l.context.$implicit)&&a}return a},Rl.b,Rl.a)),b.Y(26,1097728,[[4,4]],0,Cl.a,[[8,""],Q.a,b.j,b.z],{color:[0,"color"],clear:[1,"clear"]},null),(l()(),b._19(-1,0,["View"])),(l()(),b._19(-1,2,["\n      "]))],function(l,n){l(n,26,0,"green","")},function(l,n){var t=n.component;l(n,14,0,t.ReFormat(n.context.$implicit.title,1));l(n,17,0,t.ReFormat(n.context.$implicit.title,0));l(n,20,0,b._20(n,20,0,b._11(n,21).transform(n.context.$implicit.pubDate,5,7)),b._20(n,20,1,b._11(n,22).transform(n.context.$implicit.pubDate,8,10)),b._20(n,20,2,b._11(n,23).transform(n.context.$implicit.pubDate,0,4)))})}function d(l){return b._21(0,[(l()(),b.Z(0,0,null,null,5,"ion-list",[],null,null,null,null,null)),b.Y(1,16384,null,0,ml.a,[Q.a,b.j,b.z,sl.a,cl.l,_l.a],null,null),(l()(),b._19(-1,null,["\n      "])),(l()(),b.U(16777216,null,null,1,null,_)),b.Y(4,802816,null,0,ul.h,[b.I,b.F,b.p],{ngForOf:[0,"ngForOf"]},null),(l()(),b._19(-1,null,["\n    "]))],function(l,n){l(n,4,0,n.component.rssDataArray.podcasts)},null)}function h(l){return b._21(0,[(l()(),b.Z(0,0,null,null,28,"ion-item",[["class","item item-block"],["text-wrap",""]],null,null,null,J.b,J.a)),b.Y(1,1097728,null,3,K.a,[W.a,Q.a,b.j,b.z,[2,ll.a]],null,null),b._17(335544320,6,{contentLabel:0}),b._17(603979776,7,{_buttons:1}),b._17(603979776,8,{_icons:1}),b.Y(5,16384,null,0,nl.a,[],null,null),(l()(),b._19(-1,2,["\n        "])),(l()(),b.Z(7,0,null,0,4,"ion-thumbnail",[["item-start",""]],null,null,null,null,null)),b.Y(8,16384,null,0,xl.a,[],null,null),(l()(),b._19(-1,null,["\n          "])),(l()(),b.Z(10,0,null,null,0,"img",[["src","assets/imgs/Original_Logo_iTunes3.jpg"]],null,null,null,null,null)),(l()(),b._19(-1,null,["\n        "])),(l()(),b._19(-1,2,["\n        "])),(l()(),b.Z(13,0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),b._19(14,null,["\n          ","\n        "])),(l()(),b._19(-1,2,["\n        "])),(l()(),b.Z(16,0,null,2,1,"p",[],null,null,null,null,null)),(l()(),b._19(17,null,["",""])),(l()(),b._19(-1,2,["\n        "])),(l()(),b.Z(19,0,null,2,4,"small",[],null,null,null,null,null)),(l()(),b._19(20,null,["","/","/",""])),b._13(0,ul.r,[]),b._13(0,ul.r,[]),b._13(0,ul.r,[]),(l()(),b._19(-1,2,["\n        "])),(l()(),b.Z(25,0,null,4,2,"button",[["clear",""],["color","green"],["ion-button",""],["item-end",""]],null,[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==l.component.itemTapped(t,l.context.$implicit)&&a}return a},Rl.b,Rl.a)),b.Y(26,1097728,[[7,4]],0,Cl.a,[[8,""],Q.a,b.j,b.z],{color:[0,"color"],clear:[1,"clear"]},null),(l()(),b._19(-1,0,["View"])),(l()(),b._19(-1,2,["\n      "]))],function(l,n){l(n,26,0,"green","")},function(l,n){var t=n.component;l(n,14,0,t.ReFormat(n.context.$implicit.title,1));l(n,17,0,t.ReFormat(n.context.$implicit.title,0));l(n,20,0,b._20(n,20,0,b._11(n,21).transform(n.context.$implicit.pubDate,5,7)),b._20(n,20,1,b._11(n,22).transform(n.context.$implicit.pubDate,8,10)),b._20(n,20,2,b._11(n,23).transform(n.context.$implicit.pubDate,0,4)))})}function p(l){return b._21(0,[(l()(),b.Z(0,0,null,null,5,"ion-list",[],null,null,null,null,null)),b.Y(1,16384,null,0,ml.a,[Q.a,b.j,b.z,sl.a,cl.l,_l.a],null,null),(l()(),b._19(-1,null,["\n      "])),(l()(),b.U(16777216,null,null,1,null,h)),b.Y(4,802816,null,0,ul.h,[b.I,b.F,b.p],{ngForOf:[0,"ngForOf"]},null),(l()(),b._19(-1,null,["\n    "]))],function(l,n){l(n,4,0,n.component.searchResults)},null)}function g(l){return b._21(0,[(l()(),b.Z(0,0,null,null,7,"div",[],null,null,null,null,null)),(l()(),b._19(-1,null,["\n    "])),(l()(),b.U(16777216,null,null,1,null,d)),b.Y(3,16384,null,0,ul.i,[b.I,b.F],{ngIf:[0,"ngIf"]},null),(l()(),b._19(-1,null,[" \n\n    "])),(l()(),b.U(16777216,null,null,1,null,p)),b.Y(6,16384,null,0,ul.i,[b.I,b.F],{ngIf:[0,"ngIf"]},null),(l()(),b._19(-1,null,["\n  "]))],function(l,n){var t=n.component;l(n,3,0,!t.searching);l(n,6,0,t.searching)},null)}function f(l){return b._21(0,[(l()(),b.Z(0,0,null,null,40,"ion-header",[],null,null,null,null,null)),b.Y(1,16384,null,0,Al.a,[Q.a,b.j,b.z,[2,gl.a]],null,null),(l()(),b._19(-1,null,["\n  "])),(l()(),b.Z(3,0,null,null,36,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,Ol.b,Ol.a)),b.Y(4,49152,null,0,jl.a,[dl.a,[2,gl.a],[2,fl.a],Q.a,b.j,b.z],null,null),(l()(),b._19(-1,3,["\n    "])),(l()(),b.Z(6,0,null,0,8,"button",[["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==b._11(l,8).toggle()&&a}return a},Rl.b,Rl.a)),b.Y(7,1097728,[[1,4]],0,Cl.a,[[8,""],Q.a,b.j,b.z],null,null),b.Y(8,1064960,null,0,Ll.a,[al.a,[2,gl.a],[2,Cl.a],[2,jl.a]],{menuToggle:[0,"menuToggle"]},null),b.Y(9,16384,null,1,Gl.a,[Q.a,b.j,b.z,[2,kl.a],[2,jl.a]],null,null),b._17(603979776,1,{_buttons:1}),(l()(),b._19(-1,0,["\n      "])),(l()(),b.Z(12,0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),b.Y(13,147456,null,0,Tl.a,[Q.a,b.j,b.z],{name:[0,"name"]},null),(l()(),b._19(-1,0,["\n    "])),(l()(),b._19(-1,3,["\n    "])),(l()(),b.U(16777216,null,3,1,null,o)),b.Y(17,16384,null,0,ul.i,[b.I,b.F],{ngIf:[0,"ngIf"]},null),(l()(),b._19(-1,3,["\n    "])),(l()(),b.U(16777216,null,3,1,null,i)),b.Y(20,16384,null,0,ul.i,[b.I,b.F],{ngIf:[0,"ngIf"]},null),(l()(),b._19(-1,3,["\n    "])),(l()(),b.Z(22,0,null,2,16,"ion-buttons",[["end",""]],null,null,null,null,null)),b.Y(23,16384,null,1,Gl.a,[Q.a,b.j,b.z,[2,kl.a],[2,jl.a]],null,null),b._17(603979776,2,{_buttons:1}),(l()(),b._19(-1,null,["\n      "])),(l()(),b.Z(26,0,null,null,5,"button",[["ion-button",""]],null,[[null,"click"]],function(l,n,t){var a=!0;if("click"===n){a=!1!==l.component.Search()&&a}return a},Rl.b,Rl.a)),b.Y(27,1097728,[[2,4]],0,Cl.a,[[8,""],Q.a,b.j,b.z],null,null),(l()(),b._19(-1,0,["\n        "])),(l()(),b.Z(29,0,null,0,1,"ion-icon",[["end",""],["name","search"],["role","img"]],[[2,"hide",null]],null,null,null,null)),b.Y(30,147456,null,0,Tl.a,[Q.a,b.j,b.z],{name:[0,"name"]},null),(l()(),b._19(-1,0,["\n      "])),(l()(),b._19(-1,null,["\n      "])),(l()(),b.U(16777216,null,null,1,null,s)),b.Y(34,16384,null,0,ul.i,[b.I,b.F],{ngIf:[0,"ngIf"]},null),(l()(),b._19(-1,null,["\n      "])),(l()(),b.U(16777216,null,null,1,null,r)),b.Y(37,16384,null,0,ul.i,[b.I,b.F],{ngIf:[0,"ngIf"]},null),(l()(),b._19(-1,null,["\n    "])),(l()(),b._19(-1,3,["\n  "])),(l()(),b._19(-1,null,["\n"])),(l()(),b._19(-1,null,["\n\n"])),(l()(),b.Z(42,0,null,null,16,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,hl.b,hl.a)),b.Y(43,4374528,null,0,pl.a,[Q.a,sl.a,_l.a,b.j,b.z,dl.a,rl.a,b.u,[2,gl.a],[2,fl.a]],null,null),(l()(),b._19(-1,1,["\n  "])),(l()(),b.Z(45,0,null,2,6,"ion-refresher",[],[[2,"refresher-active",null],[4,"top",null]],[[null,"ionRefresh"]],function(l,n,t){var a=!0;if("ionRefresh"===n){a=!1!==l.component.ForceReload(t)&&a}return a},null,null)),b.Y(46,212992,null,0,Ul.a,[sl.a,pl.a,b.u,cl.l],null,{ionRefresh:"ionRefresh"}),(l()(),b._19(-1,null,["\n    "])),(l()(),b.Z(48,0,null,null,2,"ion-refresher-content",[["pullingIcon","arrow-dropdown"],["pullingText","Pull to refresh"],["refreshingSpinner","crescent"],["refreshingText","checking for new podcasts..."]],[[1,"state",0]],null,null,Bl.b,Bl.a)),b.Y(49,114688,null,0,Ml.a,[Ul.a,Q.a],{pullingIcon:[0,"pullingIcon"],pullingText:[1,"pullingText"],refreshingSpinner:[2,"refreshingSpinner"],refreshingText:[3,"refreshingText"]},null),(l()(),b._19(-1,null,["\n    "])),(l()(),b._19(-1,null,["\n  "])),(l()(),b._19(-1,1,["\n\n  "])),(l()(),b.U(16777216,null,1,1,null,c)),b.Y(54,16384,null,0,ul.i,[b.I,b.F],{ngIf:[0,"ngIf"]},null),(l()(),b._19(-1,1,["\n  \n  "])),(l()(),b.U(16777216,null,1,1,null,g)),b.Y(57,16384,null,0,ul.i,[b.I,b.F],{ngIf:[0,"ngIf"]},null),(l()(),b._19(-1,1,["\n"])),(l()(),b._19(-1,null,["\n\n"]))],function(l,n){var t=n.component;l(n,8,0,"");l(n,13,0,"menu");l(n,17,0,!t.searching);l(n,20,0,t.searching);l(n,30,0,"search");l(n,34,0,!t.searching);l(n,37,0,!t.searching),l(n,46,0);l(n,49,0,"arrow-dropdown","Pull to refresh","crescent","checking for new podcasts...");l(n,54,0,!t.rssDataArray.podcasts);l(n,57,0,t.rssDataArray)},function(l,n){l(n,3,0,b._11(n,4)._hidden,b._11(n,4)._sbPadding);l(n,6,0,b._11(n,8).isHidden);l(n,12,0,b._11(n,13)._hidden);l(n,29,0,b._11(n,30)._hidden);l(n,42,0,b._11(n,43).statusbarPadding,b._11(n,43)._hasRefresher);l(n,45,0,"inactive"!==b._11(n,46).state,b._11(n,46)._top);l(n,48,0,b._11(n,49).r.state)})}Object.defineProperty(n,"__esModule",{value:!0});var m=t(30),b=t(0),v=(t(2),t(47),t(96)),y=t(97),w=(t(87),t(54)),Z=t(52),Y=t(46),P=t(53),D=t(38),I=t(73),k=t(65),j=this&&this.__awaiter||function(l,n,t,a){return new(t||(t=Promise))(function(u,e){function o(l){try{s(a.next(l))}catch(l){e(l)}}function i(l){try{s(a.throw(l))}catch(l){e(l)}}function s(l){l.done?u(l.value):new t(function(n){n(l.value)}).then(o,i)}s((a=a.apply(l,n||[])).next())})};let S=class{constructor(l,n,t,a,u,e,o,i,s,r){this.adMob=l,this.toast=n,this.actionSheetCtrl=t,this._storage=a,this.storage=u,this.cache=e,this.navCtrl=o,this.navParams=i,this.rssProvider=s,this.player=r,this.searching=!1,this.rssDataArray=[],this.searchResults=[],this.searchTerm="",this.rssProvider.GetCached().then(l=>{l?(console.log("yes"),this.rssDataArray=l):(console.log("no"),this.Get_RSS_Feed())})}ionViewDidLoad(){this.ShowBannerAd()}ShowBannerAd(){return j(this,void 0,void 0,function*(){this.adMob.banner.config({id:"ca-app-pub-0529413882147962/2320999051",autoShow:!0});try{const l=yield this.adMob.banner.prepare();console.log(l)}catch(l){console.log(l)}})}ShowFullAd(){return j(this,void 0,void 0,function*(){try{this.adMob.interstitial.config({id:"ca-app-pub-0529413882147962/6907111325",autoShow:!0});const l=yield this.adMob.interstitial.prepare();console.log(l)}catch(l){console.log(l)}})}SortItems(){return this.rssDataArray.podcasts=this.rssDataArray.podcasts.reverse()}filterItems(l){return this.searchResults=this.rssDataArray.podcasts.filter(n=>n.title.toLowerCase().indexOf(l.toLowerCase())>-1||n.description.toLowerCase().indexOf(l.toLowerCase())>-1||n.pubDate.toLowerCase().indexOf(l.toLowerCase())>-1)}SetFilteredPodcasts(){this.filterItems(this.searchTerm),console.log(this.searchTerm)}SearchFor(l){console.log(l)}Search(){return this.searching=!this.searching}ShowActionSheet(){console.log("showing action sheet");this.actionSheetCtrl.create({buttons:[{text:"Refresh",handler:()=>{console.log("refresh from action sheet"),this.ForceReload()}},{text:"Clear local storage",handler:()=>{console.log("clearing local storage"),this._storage.remove("STORAGE_DATA"),this.rssDataArray=[]}}]}).present()}itemTapped(l,n){this.navCtrl.push(I.a,{podcast:n})}ForceReload(l){this.rssProvider.GetRSS().then(n=>{this.rssDataArray=n,console.log(n),l&&setTimeout(function(){l.complete()},3500)})}Get_RSS_Feed(){this.rssProvider.GetRSS().then(l=>{console.log("got",l),this.rssDataArray=l})}ReFormat(l,n){return 0==n?l.split("|")[0].replace("&amp;","&"):1==n?l.split("|")[1].replace("&amp;","&").split("-")[0]:void 0}};var F=t(98),z=t(262);let R=class{constructor(l,n,t,a){this.cache=l,this.platform=n,this.statusBar=t,this.splashScreen=a,this.rootPage=S,this.showSplash=!0,this.initializeApp(),this.pages=[{title:"Home",component:S},{title:"Favorites",component:F.a}]}initializeApp(){this.platform.ready().then(()=>{this.cache.setDefaultTTL(86400),this.cache.setOfflineInvalidate(!1),this.statusBar.styleDefault(),this.splashScreen.hide(),Object(z.timer)(3e3).subscribe(()=>this.showSplash=!1)})}openPage(l){this.nav.setRoot(l.component)}};var C=t(121),T=t(122),x=t(123),A=t(64),O=t(118),L=t(120);let G=class{};var U=t(58),B=t(216),M=t(217),N=t(218),$=t(219),E=t(220),X=t(221),H=t(222),V=t(223),q=t(224),J=t(68),K=t(14),W=t(13),Q=t(1),ll=t(29),nl=t(44),tl=t(116),al=t(22),ul=t(12),el=t(271),ol=t(37),il=t(84),sl=t(4),rl=t(24),cl=t(6),_l=t(9),dl=t(7),hl=t(93),pl=t(21),gl=t(5),fl=t(19),ml=t(45),bl=t(272),vl=t(63),yl=t(34),wl=t(18),Zl=t(66),Yl=b.X({encapsulation:2,styles:[],data:{}}),Pl=b.V("ng-component",R,function(l){return b._21(0,[(l()(),b.Z(0,0,null,null,1,"ng-component",[],null,null,null,e,Yl)),b.Y(1,49152,null,0,R,[Zl.a,sl.a,y.a,v.a],null,null)],null,null)},{},{},[]),Dl=t(125),Il=t(55),kl=t(40),jl=t(26),Sl=t(273),Fl=t(17),zl=t(95),Rl=t(27),Cl=t(16),Tl=t(23),xl=t(92),Al=t(70),Ol=t(124),Ll=t(85),Gl=t(71),Ul=t(72),Bl=t(274),Ml=t(94),Nl=t(77),$l=t(11),El=b.X({encapsulation:2,styles:[],data:{}}),Xl=b.V("page-home",S,function(l){return b._21(0,[(l()(),b.Z(0,0,null,null,1,"page-home",[],null,null,null,f,El)),b.Y(1,49152,null,0,S,[w.a,k.a,Nl.a,D.b,Y.a,Zl.a,fl.a,$l.a,Z.a,P.a],null,null)],null,null)},{},{},[]),Hl=t(225),Vl=t(226),ql=t(127),Jl=t(109),Kl=t(126),Wl=t(36),Ql=t(115),ln=t(146),nn=t(60),tn=t(48),an=t(131),un=t(79),en=t(135),on=t(129),sn=t(142),rn=t(193),cn=t(215),_n=t(128),dn=t(117),hn=t(130),pn=b.W(G,[U.b],function(l){return b._7([b._8(512,b.i,b.S,[[8,[B.a,M.a,N.a,$.a,E.a,X.a,H.a,V.a,q.a,Pl,Xl,Hl.a,Vl.a]],[3,b.i],b.s]),b._8(5120,b.r,b._16,[[3,b.r]]),b._8(4608,ul.k,ul.j,[b.r,[2,ul.t]]),b._8(5120,b.b,b._1,[]),b._8(5120,b.p,b._9,[]),b._8(5120,b.q,b._12,[]),b._8(4608,m.c,m.q,[ul.c]),b._8(6144,b.D,null,[m.c]),b._8(4608,m.f,ql.a,[]),b._8(5120,m.d,function(l,n,t,a,u){return[new m.k(l,n),new m.o(t),new m.n(a,u)]},[ul.c,b.u,ul.c,ul.c,m.f]),b._8(4608,m.e,m.e,[m.d,b.u]),b._8(135680,m.m,m.m,[ul.c]),b._8(4608,m.l,m.l,[m.e,m.m]),b._8(6144,b.B,null,[m.l]),b._8(6144,m.p,null,[m.m]),b._8(4608,b.G,b.G,[b.u]),b._8(4608,m.h,m.h,[ul.c]),b._8(4608,m.i,m.i,[ul.c]),b._8(4608,Fl.k,Fl.k,[]),b._8(4608,Fl.c,Fl.c,[]),b._8(4608,A.i,A.o,[ul.c,b.w,A.m]),b._8(4608,A.p,A.p,[A.i,A.n]),b._8(5120,A.a,function(l){return[l]},[A.p]),b._8(4608,A.l,A.l,[]),b._8(6144,A.j,null,[A.l]),b._8(4608,A.h,A.h,[A.j]),b._8(6144,A.b,null,[A.h]),b._8(4608,A.f,A.k,[A.b,b.o]),b._8(4608,A.c,A.c,[A.f]),b._8(4608,C.BrowserXhr,C.BrowserXhr,[]),b._8(4608,C.ResponseOptions,C.BaseResponseOptions,[]),b._8(5120,C.XSRFStrategy,C["ɵa"],[]),b._8(4608,C.XHRBackend,C.XHRBackend,[C.BrowserXhr,C.ResponseOptions,C.XSRFStrategy]),b._8(4608,C.RequestOptions,C.BaseRequestOptions,[]),b._8(5120,C.Http,C["ɵb"],[C.XHRBackend,C.RequestOptions]),b._8(5120,D.b,D.d,[D.c]),b._8(4608,Nl.a,Nl.a,[dl.a,Q.a]),b._8(4608,Jl.a,Jl.a,[dl.a,Q.a]),b._8(4608,Kl.a,Kl.a,[]),b._8(4608,W.a,W.a,[]),b._8(4608,Wl.a,Wl.a,[sl.a]),b._8(4608,rl.a,rl.a,[Q.a,sl.a,b.u,_l.a]),b._8(4608,Ql.a,Ql.a,[dl.a,Q.a]),b._8(5120,ul.f,ln.c,[ul.q,[2,ul.a],Q.a]),b._8(4608,ul.e,ul.e,[ul.f]),b._8(5120,nn.b,nn.d,[dl.a,nn.a]),b._8(5120,wl.a,wl.b,[dl.a,nn.b,ul.e,tn.b,b.i]),b._8(4608,an.a,an.a,[dl.a,Q.a,wl.a]),b._8(4608,un.a,un.a,[dl.a,Q.a]),b._8(4608,en.a,en.a,[dl.a,Q.a,wl.a]),b._8(4608,on.a,on.a,[Q.a,sl.a,_l.a,dl.a,cl.l]),b._8(4608,sn.a,sn.a,[dl.a,Q.a]),b._8(4608,yl.a,yl.a,[sl.a,Q.a]),b._8(5120,Zl.a,rn.c,[D.b,rn.a]),b._8(4608,y.a,y.a,[]),b._8(4608,v.a,v.a,[]),b._8(4608,k.a,k.a,[]),b._8(4608,O.a,O.a,[]),b._8(4608,L.a,L.a,[]),b._8(4608,Y.a,Y.a,[k.a,O.a,L.a,A.c,D.b]),b._8(4608,Z.a,Z.a,[D.b,Zl.a,A.c,Y.a]),b._8(4608,T.a,T.a,[]),b._8(4608,x.a,x.a,[]),b._8(4608,P.a,P.a,[A.c,T.a,x.a]),b._8(4608,w.a,w.a,[]),b._8(512,ul.b,ul.b,[]),b._8(512,b.k,cn.a,[]),b._8(256,Q.b,{},[]),b._8(1024,_n.a,_n.b,[]),b._8(1024,sl.a,sl.b,[m.b,_n.a,b.u]),b._8(1024,Q.a,Q.c,[Q.b,sl.a]),b._8(512,_l.a,_l.a,[sl.a]),b._8(512,al.a,al.a,[]),b._8(512,dl.a,dl.a,[Q.a,sl.a,[2,al.a]]),b._8(512,cl.l,cl.l,[dl.a]),b._8(256,nn.a,{links:[{loadChildren:"../pages/favorites/favorites.module.ngfactory#FavoritesPageModuleNgFactory",name:"FavoritesPage",segment:"favorites",priority:"low",defaultHistory:[]},{loadChildren:"../pages/podcast/podcast.module.ngfactory#PodcastPageModuleNgFactory",name:"PodcastPage",segment:"podcast",priority:"low",defaultHistory:[]}]},[]),b._8(512,b.h,b.h,[]),b._8(512,dn.a,dn.a,[b.h]),b._8(1024,tn.b,tn.c,[dn.a,b.o]),b._8(1024,b.c,function(l,n,t,a,u,e,o,i,s,r,c,_,d){return[m.s(l),hn.a(n),Kl.b(t,a),on.b(u,e,o,i,s),tn.d(r,c,_,d)]},[[2,b.t],Q.a,sl.a,_l.a,Q.a,sl.a,_l.a,dl.a,cl.l,Q.a,nn.a,tn.b,b.u]),b._8(512,b.d,b.d,[[2,b.c]]),b._8(131584,b.f,b.f,[b.u,b.T,b.o,b.k,b.i,b.d]),b._8(512,b.e,b.e,[b.f]),b._8(512,m.a,m.a,[[3,m.a]]),b._8(512,Fl.j,Fl.j,[]),b._8(512,Fl.d,Fl.d,[]),b._8(512,Fl.i,Fl.i,[]),b._8(512,ln.a,ln.a,[]),b._8(512,A.e,A.e,[]),b._8(512,A.d,A.d,[]),b._8(512,C.HttpModule,C.HttpModule,[]),b._8(512,D.a,D.a,[]),b._8(512,rn.b,rn.b,[]),b._8(512,G,G,[]),b._8(256,A.m,"XSRF-TOKEN",[]),b._8(256,A.n,"X-XSRF-TOKEN",[]),b._8(256,D.c,{name:"__ionicCache",driverOrder:["indexeddb","sqlite","websql"]},[]),b._8(256,U.a,R,[]),b._8(256,ul.a,"/",[]),b._8(256,rn.a,void 0,[])])});Object(b.M)(),Object(m.j)().bootstrapModuleFactory(pn)},46:function(l,n,t){"use strict";t.d(n,"a",function(){return a});t(2),t(118),t(120),t(65);let a=class{constructor(l,n,t,a,u){this.toast=l,this.transfer=n,this.file=t,this.http=a,this.storage=u,console.log("Hello StorageProvider Provider")}Toast(l){this.toast.show(l,"5000","center").subscribe(l=>{console.log(l)})}IsDownloaded(l){return console.log("looking for file...",l),this.file.checkFile(this.file.dataDirectory,l)}Download(l,n){this.file.checkFile(this.file.dataDirectory,n+".mp3").then(l=>{console.log("found file. No need to download",l)}).catch(t=>{console.log("no file found. Downloading");const a=this.transfer.create();this.toast.show(l+", "+this.file.dataDirectory+n+".mp3","5000","center").subscribe(l=>{console.log(l)}),a.onProgress(l=>console.log(Math.round(l.loaded/l.total*100))),a.download(l,this.file.dataDirectory+n+".mp3").then(l=>{console.log("download complete: "+l.toURL()),this.toast.show("download complete: "+l.toURL(),"5000","center").subscribe(l=>{console.log(l)}),this.Set(n,this.file.dataDirectory+n+".mp3")},l=>{console.log(l),this.toast.show("error "+l,"5000","center").subscribe(l=>{console.log(l)})})})}Set(l,n){return this.storage.set(l,n)}Get(l){return this.storage.get(l)}}},52:function(l,n,t){"use strict";t(2);var a=t(64);t(0),t(46),t(87),t(38);t.d(n,"a",function(){return u});let u=class{constructor(l,n,t,a){this._storage=l,this.cache=n,this.http=t,this.storage=a,this.storageData={podcasts:[]},this.API_URL="https://api.rss2json.com/v1/api.json",console.log("Hello RssProvider Provider")}GetCached(){return console.log("getting data from local cache"),this._storage.get("STORAGE_DATA").then(l=>{l?(console.log("here",l),this.storageData=l):console.log("nada",l)}).catch(l=>{console.log("err here",l)}),this._storage.get("STORAGE_DATA")}GetRSS(){this.GetCached();const l={params:(new a.g).set("rss_url","https://www.thehighersidechats.com/feed/podcast").set("api_key","yqkqpe8nkirfvdeijgu0arymq7panztpvf56h7hh").set("count","500").set("order_by","pubDate").set("order_dir","desc")};return this.http.get(this.API_URL,l).subscribe(l=>{l.items?(l.items.forEach(l=>{let n=new class{constructor(l,n,t,a,u,e,o,i,s){this.title=l,this.pubDate=n,this.description=t,this.coverImage=a,this.link=u,this.mp3=e,this.length=o,this.duration=i,this.userData=s}}(l.title,l.pubDate,l.description,"assets/imgs/Original_Logo_iTunes3.jpg",l.link,l.enclosure.link,l.enclosure.length,l.enclosure.duration,{downloaded:!1,favorite:!1,listened:!1,listening:!1,lastPosition:0,filePath:""});console.log(this.storageData.podcasts.findIndex(l=>l.pubDate===n.pubDate)),this.storageData.podcasts.findIndex(l=>l.pubDate===n.pubDate)<0&&(console.log("found new",n),this.storageData.podcasts.push(n))}),this.storageData.podcasts.length>1?(this._storage.set("STORAGE_DATA",this.storageData),console.log("storage data",this.storageData)):console.log("no podcasts in array, maybe offline")):console.log("no data[items]")}),new Promise((l,n)=>{this.storageData.podcasts?l(this.storageData):n("no")})}}},53:function(l,n,t){"use strict";t.d(n,"a",function(){return a});t(2),t(122),t(123);let a=class{constructor(l,n,t){this.http=l,this.media=n,this.musicControls=t}GetPlayerStatus(){return this.playingNow?(console.log("playing now yes",this.playingNow),!0):(console.log("playing now no",this.playingNow),!1)}Pause(){this.playingNow.pause(),this.musicControls.updateIsPlaying(!1)}Stop(){this.playingNow&&(this.playingNow.stop(),this.playingNow.release(),this.musicControls.destroy())}Play(l,n,t,a){const u=this.media.create(l);this.Stop(),this.playingNow=u,this.musicControls.create({track:t,artist:"Greg Carlwood & "+n,cover:"assets/imgs/Original_Logo_iTunes3.jpg",isPlaying:!0,dismissable:!1,hasPrev:!1,hasNext:!1,hasClose:!0,album:"Absolution",duration:60,elapsed:10,hasSkipForward:!0,hasSkipBackward:!0,skipForwardInterval:15,skipBackwardInterval:15,hasScrubbing:!1,ticker:"Now playing "+t,playIcon:"media_play",pauseIcon:"media_pause",prevIcon:"media_prev",nextIcon:"media_next",closeIcon:"media_close",notificationIcon:"notification"}).then(l=>{this.musicControls.updateIsPlaying(!0)}),u.play(),console.log("playing",l,u),this.musicControls.subscribe().subscribe(l=>{switch(JSON.parse(l).message){case"music-controls-next":case"music-controls-previous":break;case"music-controls-pause":u.pause(),this.musicControls.updateIsPlaying(!1);break;case"music-controls-play":u.play(),this.musicControls.updateIsPlaying(!0);break;case"music-controls-destroy":this.Stop();break;default:console.log(l)}}),this.musicControls.listen()}}},73:function(l,n,t){"use strict";t.d(n,"a",function(){return u});t(2),t(47),t(54);var a=this&&this.__awaiter||function(l,n,t,a){return new(t||(t=Promise))(function(u,e){function o(l){try{s(a.next(l))}catch(l){e(l)}}function i(l){try{s(a.throw(l))}catch(l){e(l)}}function s(l){l.done?u(l.value):new t(function(n){n(l.value)}).then(o,i)}s((a=a.apply(l,n||[])).next())})};let u=class{constructor(l,n,t,a,u,e){if(this.adMob=l,this.player=n,this.storage=t,this._storage=a,this.navCtrl=u,this.navParams=e,this.podcast=this.navParams.get("podcast"),this.podcast.duration=this.podcast.duration/60/60,this.isPlaying=this.player.GetPlayerStatus(),console.log(this.player.playingNow),this.podcast.duration>1){let l=this.podcast.duration.toString().split(".")[0],n=this.podcast.duration.toString().split(".")[1];n=60*Number(n),this.podcast.duration=l+":"+n}}ShowFullAd(){return a(this,void 0,void 0,function*(){try{this.adMob.interstitial.config({id:"ca-app-pub-0529413882147962/6907111325",autoShow:!0});const l=yield this.adMob.interstitial.prepare();console.log(l)}catch(l){console.log(l)}})}ionViewDidLoad(){this.ShowFullAd(),console.log("ionViewDidLoad PodcastPage",this.navParams.get("podcast")),this.isPlaying=this.player.GetPlayerStatus()}GetCached(){return console.log("getting data from local cache"),this._storage.get("STORAGE_DATA").then(l=>{l?(console.log("here",l),this.storageData=l):console.log("nada",l)}).catch(l=>{console.log("err here",l)}),this._storage.get("STORAGE_DATA")}Download(l,n){this.storage.Download(l,n.split(" ")[0])}PausePodcast(){this.isPlaying&&(this.player.Pause(),this.isPlaying="paused")}PlayPodcast(l,n){this.isPlaying&&this.player.Stop(),console.log("not downloaded, streaming from internet",l.mp3),this.player.Play(l.mp3,l.title,n,l.coverImage),this.isPlaying=this.player.GetPlayerStatus(),console.log(this.podcast.playingNow)}StopPodcast(){console.log("stopping podcast"),this.isPlaying&&(console.log("stopped podcast"),this.player.Stop(),this.isPlaying=!1)}addToFav(l){this.GetCached().then(n=>{l.userData.favorite=!l.userData.favorite;let t=this.storageData.podcasts.findIndex(n=>n.pubDate===l.pubDate);this.storageData.podcasts[t].userData.favorite=l.userData.favorite,console.log("array fav",this.storageData.podcasts[t].userData.favorite),this._storage.set("STORAGE_DATA",this.storageData)})}ReFormat(l,n){return 0==n?l.split("|")[0].replace("&amp;","&"):1==n?l.split("|")[1].replace("&amp;","&").split("-")[0]:2==n?l.replace(/&amp;/g,"&"):void 0}}},98:function(l,n,t){"use strict";t.d(n,"a",function(){return u});t(2),t(47);var a=t(73);let u=class{constructor(l,n,t){this.rssProvider=l,this.navCtrl=n,this.navParams=t,this.favPodcasts=[],this.rssProvider.GetCached().then(l=>{if(l){console.log("yes favs");var n=l.podcasts.filter(l=>!0===l.userData.favorite);this.favPodcasts=n,this.hasFavs=!0}else console.log("no favs"),this.hasFavs=!1})}ionViewDidLoad(){console.log("ionViewDidLoad FavoritesPage")}ionViewDidEnter(){this.rssProvider.GetCached().then(l=>{if(l){console.log("yes favs");var n=l.podcasts.filter(l=>!0===l.userData.favorite);this.favPodcasts=n,this.hasFavs=!0}else console.log("no favs"),this.hasFavs=!1})}itemTapped(l,n){this.navCtrl.push(a.a,{podcast:n})}ReFormat(l,n){return 0==n?l.split("|")[0].replace("&amp;","&"):1==n?l.split("|")[1].replace("&amp;","&").split("-")[0]:void 0}}}},[227]);
+webpackJsonp([3],{
+
+/***/ 113:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FavoritesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_rss_rss__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__podcast_podcast__ = __webpack_require__(57);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the FavoritesPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+let FavoritesPage = class FavoritesPage {
+    constructor(rssProvider, navCtrl, navParams) {
+        this.rssProvider = rssProvider;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.favPodcasts = [];
+        this.rssProvider.GetCached().then((data) => {
+            if (data) {
+                console.log('yes favs');
+                var result = data.podcasts.filter(obj => {
+                    return obj.userData.favorite === true;
+                });
+                // let index = data.podcasts.findIndex(i => i.userData.favorite === true);
+                this.favPodcasts = result;
+                this.hasFavs = true;
+            }
+            else {
+                console.log('no favs');
+                this.hasFavs = false;
+            }
+        });
+    }
+    ionViewDidLoad() {
+        console.log('ionViewDidLoad FavoritesPage');
+    }
+    ionViewDidEnter() {
+        this.rssProvider.GetCached().then((data) => {
+            if (data) {
+                console.log('yes favs');
+                var result = data.podcasts.filter(obj => {
+                    return obj.userData.favorite === true;
+                });
+                // let index = data.podcasts.findIndex(i => i.userData.favorite === true);
+                this.favPodcasts = result;
+                this.hasFavs = true;
+            }
+            else {
+                console.log('no favs');
+                this.hasFavs = false;
+            }
+        });
+    }
+    itemTapped(event, podcast) {
+        // That's right, we're pushing to ourselves!
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__podcast_podcast__["a" /* PodcastPage */], {
+            podcast: podcast
+        });
+    }
+    ReFormat(title, part) {
+        if (part == 0) {
+            return title.split('|')[0].replace('&amp;', '&');
+        }
+        if (part == 1) {
+            return title.split('|')[1].replace('&amp;', '&').split('-')[0];
+        }
+    }
+};
+FavoritesPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        selector: 'page-favorites',template:/*ion-inline-start:"C:\Users\root\Documents\Ionic\THC\src\pages\favorites\favorites.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Favorites</ion-title>\n    <ion-buttons end>\n      <button ion-button>\n        <ion-icon (click)="Search()" name="search" end></ion-icon>\n      </button>\n      <button ion-button>\n        <ion-icon (click)="Sort()" name="funnel" end></ion-icon>\n      </button>\n      <button ion-button>\n        <ion-icon (click)="More()" name="more" end></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <label padding style="position: absolute; top: 40%; color: grey;" *ngIf="!hasFavs" text-center>\n    no favorites found...try adding a podcast from the home page!\n  </label>\n  <ion-list *ngIf="favPodcasts">\n    <ion-item *ngFor="let podcast of favPodcasts" text-wrap>\n      <ion-thumbnail item-start>\n        <img src="assets/imgs/Original_Logo_iTunes3.jpg">\n      </ion-thumbnail>\n      <h2>\n        {{ReFormat(podcast.title, 1)}}\n      </h2>\n      <p>{{ReFormat(podcast.title, 0)}}</p>\n      <small>{{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}</small>\n      <button (click)="itemTapped($event, podcast)" ion-button clear item-end color="green">View</button>\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\root\Documents\Ionic\THC\src\pages\favorites\favorites.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_rss_rss__["a" /* RssProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+], FavoritesPage);
+
+//# sourceMappingURL=favorites.js.map
+
+/***/ }),
+
+/***/ 124:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 124;
+
+/***/ }),
+
+/***/ 168:
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"../pages/favorites/favorites.module": [
+		306,
+		2
+	],
+	"../pages/podcast/podcast.module": [
+		308,
+		1
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids)
+		return Promise.reject(new Error("Cannot find module '" + req + "'."));
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__(ids[0]);
+	});
+};
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = 168;
+module.exports = webpackAsyncContext;
+
+/***/ }),
+
+/***/ 220:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_cache__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_rss_rss__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_storage_storage__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_player_player__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_storage__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__podcast_podcast__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_toast__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_admob_free__ = __webpack_require__(91);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+
+
+
+
+
+
+
+
+
+let HomePage = class HomePage {
+    constructor(adMob, toast, actionSheetCtrl, _storage, storage, cache, navCtrl, navParams, rssProvider, player) {
+        this.adMob = adMob;
+        this.toast = toast;
+        this.actionSheetCtrl = actionSheetCtrl;
+        this._storage = _storage;
+        this.storage = storage;
+        this.cache = cache;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.rssProvider = rssProvider;
+        this.player = player;
+        this.searching = false;
+        this.rssDataArray = [];
+        this.searchResults = [];
+        this.searchTerm = '';
+        this.rssProvider.GetCached().then((data) => {
+            if (data) {
+                console.log('yes');
+                this.rssDataArray = data;
+            }
+            else {
+                console.log('no');
+                this.Get_RSS_Feed();
+            }
+        });
+        //this.ShowBannerAd();
+        //this.ShowFullAd();
+    }
+    ionViewDidLoad() {
+        this.ShowBannerAd();
+    }
+    ShowBannerAd() {
+        return __awaiter(this, void 0, void 0, function* () {
+            const bannerConfig = {
+                //id: 'ca-app-pub-3940256099942544/6300978111',
+                id: 'ca-app-pub-0529413882147962/2320999051',
+                //isTesting: false,
+                autoShow: true,
+            };
+            this.adMob.banner.config(bannerConfig);
+            try {
+                const result = yield this.adMob.banner.prepare();
+                console.log(result);
+            }
+            catch (e) {
+                console.log(e);
+            }
+        });
+    }
+    ShowFullAd() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const interstitialConfig = {
+                    //id: 'ca-app-pub-3940256099942544/1033173712',
+                    id: 'ca-app-pub-0529413882147962/6907111325',
+                    autoShow: true
+                };
+                this.adMob.interstitial.config(interstitialConfig);
+                const result = yield this.adMob.interstitial.prepare();
+                console.log(result);
+            }
+            catch (e) {
+                console.log(e);
+            }
+        });
+    }
+    SortItems() {
+        return this.rssDataArray.podcasts = this.rssDataArray.podcasts.reverse();
+    }
+    filterItems(searchTerm) {
+        return this.searchResults = this.rssDataArray.podcasts.filter((podcast) => {
+            return podcast.title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1 || podcast.description.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1 || podcast.pubDate.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+        });
+    }
+    SetFilteredPodcasts() {
+        this.filterItems(this.searchTerm);
+        console.log(this.searchTerm);
+    }
+    SearchFor(event) {
+        console.log(event);
+    }
+    Search() {
+        return this.searching = !this.searching;
+    }
+    ShowActionSheet() {
+        console.log('showing action sheet');
+        let actionSheet = this.actionSheetCtrl.create({
+            //title: 'test',
+            buttons: [
+                {
+                    text: 'Refresh',
+                    handler: () => {
+                        console.log('refresh from action sheet');
+                        //Toast('Looking for new podcasts...');
+                        this.ForceReload();
+                    }
+                },
+                {
+                    text: 'Clear local storage',
+                    handler: () => {
+                        console.log('clearing local storage');
+                        //Toast('Looking for new podcasts...');
+                        this._storage.remove('STORAGE_DATA');
+                        this.rssDataArray = [];
+                    }
+                }
+            ]
+        });
+        actionSheet.present();
+    }
+    itemTapped(event, podcast) {
+        // That's right, we're pushing to ourselves!
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_7__podcast_podcast__["a" /* PodcastPage */], {
+            podcast: podcast
+        });
+    }
+    ForceReload(refresher) {
+        this.rssProvider.GetRSS().then(data => {
+            this.rssDataArray = data;
+            console.log(data);
+            if (refresher) {
+                setTimeout(function () {
+                    refresher.complete();
+                }, 3500);
+            }
+        });
+    }
+    Get_RSS_Feed() {
+        this.rssProvider.GetRSS().then((data) => {
+            console.log('got', data);
+            this.rssDataArray = data;
+        });
+    }
+    ReFormat(title, part) {
+        if (part == 0) {
+            return title.split('|')[0].replace('&amp;', '&');
+        }
+        if (part == 1) {
+            return title.split('|')[1].replace('&amp;', '&').split('-')[0];
+        }
+    }
+};
+HomePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        selector: 'page-home',template:/*ion-inline-start:"C:\Users\root\Documents\Ionic\THC\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title *ngIf="!searching">THC Podcasts</ion-title>\n\n    <ion-searchbar *ngIf="searching"\n\n      [(ngModel)]="searchTerm" \n\n      (ionInput)="SetFilteredPodcasts()"\n\n      [showCancelButton]="shouldShowCancel"\n\n      (ion-cancel)="onCancel($event)">  \n\n    </ion-searchbar>\n\n    <ion-buttons end>\n\n      <button ion-button (click)="Search()">\n\n        <ion-icon name="search" end></ion-icon>\n\n      </button>\n\n      <button *ngIf="!searching" ion-button (click)="SortItems()">\n\n        <ion-icon name="funnel" end></ion-icon>\n\n      </button>\n\n      <button *ngIf="!searching" ion-button (click)="ShowActionSheet()">\n\n        <ion-icon name="more" end></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-refresher (ionRefresh)="ForceReload($event)">\n\n    <ion-refresher-content\n\n      pullingIcon="arrow-dropdown"\n\n      pullingText="Pull to refresh"\n\n      refreshingSpinner="crescent"\n\n      refreshingText="checking for new podcasts...">\n\n    </ion-refresher-content>\n\n  </ion-refresher>\n\n\n\n  <label text-center padding style="position: absolute; top: 40%; color: grey;" *ngIf="!rssDataArray.podcasts" >\n\n    no podcasts found...pull down to refresh\n\n  </label>\n\n  \n\n  <div *ngIf="rssDataArray">\n\n    <ion-list *ngIf="!searching">\n\n      <ion-item *ngFor="let podcast of rssDataArray.podcasts" text-wrap>\n\n        <ion-thumbnail item-start>\n\n          <img src="assets/imgs/Original_Logo_iTunes3.jpg">\n\n        </ion-thumbnail>\n\n        <h2>\n\n          {{ReFormat(podcast.title, 1)}}\n\n        </h2>\n\n        <p>{{ReFormat(podcast.title, 0)}}</p>\n\n        <small>{{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}</small>\n\n        <button (click)="itemTapped($event, podcast)" ion-button clear item-end color="green">View</button>\n\n      </ion-item>\n\n    </ion-list> \n\n\n\n    <ion-list *ngIf="searching">\n\n      <ion-item *ngFor="let podcast of searchResults" text-wrap>\n\n        <ion-thumbnail item-start>\n\n          <img src="assets/imgs/Original_Logo_iTunes3.jpg">\n\n        </ion-thumbnail>\n\n        <h2>\n\n          {{ReFormat(podcast.title, 1)}}\n\n        </h2>\n\n        <p>{{ReFormat(podcast.title, 0)}}</p>\n\n        <small>{{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}</small>\n\n        <button (click)="itemTapped($event, podcast)" ion-button clear item-end color="green">View</button>\n\n      </ion-item>\n\n    </ion-list>\n\n  </div>\n\n</ion-content>\n\n\n\n'/*ion-inline-end:"C:\Users\root\Documents\Ionic\THC\src\pages\home\home.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_9__ionic_native_admob_free__["a" /* AdMobFree */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_toast__["a" /* Toast */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */], __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_4__providers_storage_storage__["a" /* StorageProvider */], __WEBPACK_IMPORTED_MODULE_2_ionic_cache__["b" /* CacheService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_rss_rss__["a" /* RssProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_player_player__["a" /* PlayerProvider */]])
+], HomePage);
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 221:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(240);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 240:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_cache__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_admob_free__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_home_home__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_favorites_favorites__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_podcast_podcast__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__providers_rss_rss__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_http__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_media__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_music_controls__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_common_http__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_player_player__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_storage_storage__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_file_transfer__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_file__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_toast__ = __webpack_require__(89);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let AppModule = class AppModule {
+};
+AppModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_favorites_favorites__["a" /* FavoritesPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_podcast_podcast__["a" /* PodcastPage */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */], {}, {
+                links: [
+                    { loadChildren: '../pages/favorites/favorites.module#FavoritesPageModule', name: 'FavoritesPage', segment: 'favorites', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/podcast/podcast.module#PodcastPageModule', name: 'PodcastPage', segment: 'podcast', priority: 'low', defaultHistory: [] }
+                ]
+            }),
+            __WEBPACK_IMPORTED_MODULE_15__angular_common_http__["b" /* HttpClientModule */],
+            __WEBPACK_IMPORTED_MODULE_12__angular_http__["HttpModule"],
+            __WEBPACK_IMPORTED_MODULE_5_ionic_cache__["a" /* CacheModule */].forRoot()
+        ],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* IonicApp */]],
+        entryComponents: [
+            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_8__pages_home_home__["a" /* HomePage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_favorites_favorites__["a" /* FavoritesPage */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_podcast_podcast__["a" /* PodcastPage */]
+        ],
+        providers: [
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
+            { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] },
+            __WEBPACK_IMPORTED_MODULE_11__providers_rss_rss__["a" /* RssProvider */],
+            __WEBPACK_IMPORTED_MODULE_16__providers_player_player__["a" /* PlayerProvider */],
+            __WEBPACK_IMPORTED_MODULE_13__ionic_native_media__["a" /* Media */],
+            __WEBPACK_IMPORTED_MODULE_14__ionic_native_music_controls__["a" /* MusicControls */],
+            __WEBPACK_IMPORTED_MODULE_17__providers_storage_storage__["a" /* StorageProvider */],
+            __WEBPACK_IMPORTED_MODULE_19__ionic_native_file__["a" /* File */],
+            __WEBPACK_IMPORTED_MODULE_18__ionic_native_file_transfer__["a" /* FileTransfer */],
+            __WEBPACK_IMPORTED_MODULE_20__ionic_native_toast__["a" /* Toast */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_native_admob_free__["a" /* AdMobFree */]
+        ]
+    })
+], AppModule);
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 278:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+class PodcastClass {
+    constructor(title, pubDate, description, coverImage, link, mp3, length, duration, userData) {
+        this.title = title;
+        this.pubDate = pubDate;
+        this.description = description;
+        this.coverImage = coverImage;
+        this.link = link;
+        this.mp3 = mp3;
+        this.length = length;
+        this.duration = duration;
+        this.userData = userData;
+    }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = PodcastClass;
+
+//# sourceMappingURL=podcast.js.map
+
+/***/ }),
+
+/***/ 296:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_favorites_favorites__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_cache__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_observable_timer__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_observable_timer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_observable_timer__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+let MyApp = class MyApp {
+    constructor(cache, platform, statusBar, splashScreen) {
+        this.cache = cache;
+        this.platform = platform;
+        this.statusBar = statusBar;
+        this.splashScreen = splashScreen;
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */];
+        this.showSplash = true;
+        this.initializeApp();
+        // used for an example of ngFor and navigation
+        this.pages = [
+            {
+                title: 'Home',
+                component: __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */]
+            },
+            {
+                title: 'Favorites',
+                component: __WEBPACK_IMPORTED_MODULE_5__pages_favorites_favorites__["a" /* FavoritesPage */]
+            }
+        ];
+    }
+    initializeApp() {
+        this.platform.ready().then(() => {
+            this.cache.setDefaultTTL(60 * 60 * 24 * 1);
+            this.cache.setOfflineInvalidate(false);
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            this.statusBar.styleDefault();
+            this.splashScreen.hide();
+            Object(__WEBPACK_IMPORTED_MODULE_7_rxjs_observable_timer__["timer"])(3000).subscribe(() => this.showSplash = false);
+        });
+    }
+    openPage(page) {
+        // Reset the content nav to have just this page
+        // we wouldn't want the back button to show in this scenario
+        this.nav.setRoot(page.component);
+    }
+};
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */])
+], MyApp.prototype, "nav", void 0);
+MyApp = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\root\Documents\Ionic\THC\src\app\app.html"*/'\n<div *ngIf="showSplash" class="splash">\n\n	<div class=\'demo\'>\n	  <div class=\'circle\'>\n	    <div class=\'inner\'></div>\n	  </div>\n	  <div class=\'circle\'>\n	    <div class=\'inner\'></div>\n	  </div>\n	  <div class=\'circle\'>\n	    <div class=\'inner\'></div>\n	  </div>\n	  <div class=\'circle\'>\n	    <div class=\'inner\'></div>\n	  </div>\n	  <div class=\'circle\'>\n	    <div class=\'inner\'></div>\n	  </div>\n	</div>\n	\n</div>\n\n<ion-menu [content]="content">\n  \n  <ion-content>\n    <ion-list no-lines>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        \n        <label style="padding-left: 10%;">{{p.title}}</label>\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\Users\root\Documents\Ionic\THC\src\app\app.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6_ionic_cache__["b" /* CacheService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+], MyApp);
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 51:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StorageProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_file_transfer__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_toast__ = __webpack_require__(89);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+/*
+  Generated class for the StorageProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+let StorageProvider = class StorageProvider {
+    constructor(toast, transfer, file, http, storage) {
+        this.toast = toast;
+        this.transfer = transfer;
+        this.file = file;
+        this.http = http;
+        this.storage = storage;
+        console.log('Hello StorageProvider Provider');
+    }
+    Toast(text) {
+        this.toast.show(text, '5000', 'center').subscribe(toast => {
+            console.log(toast);
+        });
+    }
+    IsDownloaded(file) {
+        console.log('looking for file...', file);
+        return this.file.checkFile(this.file.dataDirectory, file);
+    }
+    Download(url, date) {
+        this.file.checkFile(this.file.dataDirectory, date + '.mp3').then((file) => {
+            console.log('found file. No need to download', file);
+        }).catch((err) => {
+            console.log('no file found. Downloading');
+            const fileTransfer = this.transfer.create();
+            this.toast.show(url + ', ' + this.file.dataDirectory + date + '.mp3', '5000', 'center').subscribe(toast => {
+                console.log(toast);
+            });
+            fileTransfer.onProgress((progress) => console.log(Math.round(((progress.loaded / progress.total) * 100))));
+            fileTransfer.download(url, this.file.dataDirectory + date + '.mp3').then((entry) => {
+                console.log('download complete: ' + entry.toURL());
+                this.toast.show('download complete: ' + entry.toURL(), '5000', 'center').subscribe(toast => {
+                    console.log(toast);
+                });
+                this.Set(date, this.file.dataDirectory + date + '.mp3');
+            }, (error) => {
+                console.log(error);
+                this.toast.show('error ' + error, '5000', 'center').subscribe(toast => {
+                    console.log(toast);
+                });
+            });
+        });
+    }
+    Set(key, val) {
+        return this.storage.set(key, val);
+    }
+    Get(key) {
+        return this.storage.get(key);
+    }
+};
+StorageProvider = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__ionic_native_toast__["a" /* Toast */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_file_transfer__["a" /* FileTransfer */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__["a" /* File */], __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
+], StorageProvider);
+
+//# sourceMappingURL=storage.js.map
+
+/***/ }),
+
+/***/ 57:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PodcastPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_player_player__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_storage_storage__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_admob_free__ = __webpack_require__(91);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+
+
+
+
+
+
+let PodcastPage = class PodcastPage {
+    constructor(adMob, player, storage, _storage, navCtrl, navParams) {
+        this.adMob = adMob;
+        this.player = player;
+        this.storage = storage;
+        this._storage = _storage;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.podcast = this.navParams.get('podcast');
+        //this.podcasts = this.navParams.get('podcasts');
+        this.podcast.duration = (this.podcast.duration / 60 / 60);
+        this.isPlaying = this.player.GetPlayerStatus();
+        console.log(this.player.playingNow);
+        if (this.podcast.duration > 1) {
+            let hours = this.podcast.duration.toString().split('.')[0];
+            let mins = this.podcast.duration.toString().split('.')[1];
+            mins = Number(mins) * 60;
+            this.podcast.duration = hours + ':' + mins;
+        }
+    }
+    ShowFullAd() {
+        return __awaiter(this, void 0, void 0, function* () {
+            try {
+                const interstitialConfig = {
+                    //id: 'ca-app-pub-3940256099942544/1033173712',
+                    id: 'ca-app-pub-0529413882147962/6907111325',
+                    autoShow: true
+                };
+                this.adMob.interstitial.config(interstitialConfig);
+                const result = yield this.adMob.interstitial.prepare();
+                console.log(result);
+            }
+            catch (e) {
+                console.log(e);
+            }
+        });
+    }
+    ionViewDidLoad() {
+        this.ShowFullAd();
+        console.log('ionViewDidLoad PodcastPage', this.navParams.get('podcast'));
+        this.isPlaying = this.player.GetPlayerStatus();
+    }
+    GetCached() {
+        console.log('getting data from local cache');
+        this._storage.get('STORAGE_DATA').then((res) => {
+            if (res) {
+                console.log('here', res);
+                this.storageData = res;
+            }
+            else {
+                console.log('nada', res);
+            }
+        }).catch((err) => {
+            console.log('err here', err);
+        });
+        return this._storage.get('STORAGE_DATA');
+    }
+    Download(url, date) {
+        this.storage.Download(url, date.split(" ")[0]);
+    }
+    PausePodcast() {
+        if (this.isPlaying) {
+            this.player.Pause();
+            this.isPlaying = 'paused';
+        }
+    }
+    PlayPodcast(podcast, author) {
+        if (this.isPlaying) {
+            this.player.Stop();
+        }
+        //let filename = podcast.pubDate.split(' ')[0]+'.mp3';
+        //console.log('filename', filename);
+        //	if (podcast.userData.downloaded == true) {
+        //		let location = this.file.dataDirectory + filename;
+        //	console.log('found it, playing from local storage', location);
+        //	this.player.Play(location, podcast.title, author, podcast.coverImage);
+        // 	}else{
+        //let location = podcast.mp3;
+        console.log('not downloaded, streaming from internet', podcast.mp3);
+        this.player.Play(podcast.mp3, podcast.title, author, podcast.coverImage);
+        this.isPlaying = this.player.GetPlayerStatus();
+        console.log(this.podcast.playingNow);
+        //}
+    }
+    StopPodcast() {
+        console.log('stopping podcast');
+        if (this.isPlaying) {
+            console.log('stopped podcast');
+            this.player.Stop();
+            this.isPlaying = false;
+        }
+    }
+    addToFav(podcast) {
+        this.GetCached().then((res) => {
+            podcast.userData.favorite = !podcast.userData.favorite;
+            let pIndex = this.storageData.podcasts.findIndex(i => i.pubDate === podcast.pubDate);
+            this.storageData.podcasts[pIndex].userData.favorite = podcast.userData.favorite;
+            console.log('array fav', this.storageData.podcasts[pIndex].userData.favorite);
+            this._storage.set('STORAGE_DATA', this.storageData);
+        });
+    }
+    ReFormat(title, part) {
+        if (part == 0) {
+            return title.split('|')[0].replace('&amp;', '&');
+        }
+        if (part == 1) {
+            return title.split('|')[1].replace('&amp;', '&').split('-')[0];
+        }
+        if (part == 2) {
+            return title.replace(/&amp;/g, '&');
+        }
+    }
+};
+PodcastPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+        selector: 'page-podcast',template:/*ion-inline-start:"C:\Users\root\Documents\Ionic\THC\src\pages\podcast\podcast.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{ReFormat(podcast.title, 0)}}</ion-title>\n    <ion-buttons end>\n    <button (click)="addToFav(podcast)" round clear ion-button icon-only class="favbtn">\n      <ion-icon *ngIf="podcast.userData.favorite" name=\'heart\' color="danger" is-active="true"></ion-icon>\n      <ion-icon *ngIf="!podcast.userData.favorite" name=\'heart\' color="light" is-active="false"></ion-icon>\n    </button>\n  </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding class="card-background-page">\n	<ion-card>\n      <img src="{{podcast.coverImage}}" class="tinted">\n\n      <p class="card-date">\n        {{podcast.pubDate | slice:5:7}}/{{podcast.pubDate | slice:8:10}}/{{podcast.pubDate | slice:0:4}}\n      </p>\n\n      <h5 class="card-subtitle">\n        {{ReFormat(podcast.title, 1)}}\n      </h5>\n\n      <button style="display: none;"ion-button color="light" round class="downloadbtn" (click)="Download(podcast.mp3, podcast.pubDate)">\n        <ion-icon name=\'md-download\' is-active="false"></ion-icon>\n      </button>\n    </ion-card>\n\n    <ion-fab bottom right>\n      <button *ngIf="!isPlaying" ion-fab color="green" (click)="PlayPodcast(podcast, ReFormat(podcast.title, 1))">\n        <ion-icon name="md-play"></ion-icon>\n      </button>\n      <button *ngIf="isPlaying" ion-fab color="danger" (click)="StopPodcast()">\n        <ion-icon name="square"></ion-icon>\n      </button>\n    </ion-fab>\n      \n    <ion-item no-lines>\n    	<div item-left>Podcast Length {{podcast.duration | slice:0:4}}</div>\n    </ion-item>\n    <ion-item no-lines text-wrap inset><p class="newLines">{{ReFormat(podcast.description, 2)}}</p></ion-item>\n</ion-content>\n'/*ion-inline-end:"C:\Users\root\Documents\Ionic\THC\src\pages\podcast\podcast.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__ionic_native_admob_free__["a" /* AdMobFree */], __WEBPACK_IMPORTED_MODULE_3__providers_player_player__["a" /* PlayerProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_storage_storage__["a" /* StorageProvider */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+], PodcastPage);
+
+//# sourceMappingURL=podcast.js.map
+
+/***/ }),
+
+/***/ 86:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RssProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__storage_storage__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_cache__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__podcast__ = __webpack_require__(278);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+let RssProvider = class RssProvider {
+    constructor(_storage, cache, http, storage) {
+        this._storage = _storage;
+        this.cache = cache;
+        this.http = http;
+        this.storage = storage;
+        this.storageData = {
+            podcasts: []
+        };
+        this.API_URL = "https://api.rss2json.com/v1/api.json";
+        console.log('Hello RssProvider Provider');
+    }
+    GetCached() {
+        console.log('getting data from local cache');
+        this._storage.get('STORAGE_DATA').then((res) => {
+            if (res) {
+                console.log('here', res);
+                this.storageData = res;
+            }
+            else {
+                console.log('nada', res);
+            }
+        }).catch((err) => {
+            console.log('err here', err);
+        });
+        return this._storage.get('STORAGE_DATA');
+    }
+    GetRSS() {
+        this.GetCached();
+        const params = {
+            params: new __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["c" /* HttpParams */]().set('rss_url', 'https://www.thehighersidechats.com/feed/podcast').set('api_key', 'yqkqpe8nkirfvdeijgu0arymq7panztpvf56h7hh').set('count', '500').set('order_by', 'pubDate').set('order_dir', 'desc')
+        };
+        let request = this.http.get(this.API_URL, params);
+        request.subscribe(data => {
+            if (data['items']) {
+                data['items'].forEach((podcast) => {
+                    let coverImage = "assets/imgs/Original_Logo_iTunes3.jpg";
+                    let pcast = new __WEBPACK_IMPORTED_MODULE_5__podcast__["a" /* PodcastClass */](podcast.title, podcast.pubDate, podcast.description, coverImage, podcast.link, podcast.enclosure.link, podcast.enclosure.length, podcast.enclosure.duration, {
+                        downloaded: false,
+                        favorite: false,
+                        listened: false,
+                        listening: false,
+                        lastPosition: 0,
+                        filePath: ''
+                    });
+                    console.log(this.storageData.podcasts.findIndex(i => i.pubDate === pcast.pubDate));
+                    if (this.storageData.podcasts.findIndex(i => i.pubDate === pcast.pubDate) < 0) {
+                        console.log('found new', pcast);
+                        this.storageData.podcasts.unshift(pcast);
+                    }
+                    else {
+                    }
+                });
+                if (this.storageData.podcasts.length > 1) {
+                    this._storage.set('STORAGE_DATA', this.storageData);
+                    console.log('storage data', this.storageData);
+                }
+                else {
+                    console.log('no podcasts in array, maybe offline');
+                }
+            }
+            else {
+                console.log('no data[items]');
+            }
+        });
+        return new Promise((resolve, reject) => {
+            if (this.storageData.podcasts) {
+                resolve(this.storageData);
+            }
+            else {
+                reject('no');
+            }
+        });
+    }
+};
+RssProvider = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_3_ionic_cache__["b" /* CacheService */], __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__storage_storage__["a" /* StorageProvider */]])
+], RssProvider);
+
+//# sourceMappingURL=rss.js.map
+
+/***/ }),
+
+/***/ 90:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PlayerProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_media__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_music_controls__ = __webpack_require__(178);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/*
+  Generated class for the PlayerProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+let PlayerProvider = class PlayerProvider {
+    constructor(http, media, musicControls) {
+        this.http = http;
+        this.media = media;
+        this.musicControls = musicControls;
+    }
+    GetPlayerStatus() {
+        if (this.playingNow) {
+            console.log('playing now yes', this.playingNow);
+            return true;
+        }
+        else {
+            console.log('playing now no', this.playingNow);
+            return false;
+        }
+    }
+    Pause() {
+        this.playingNow.pause();
+        this.musicControls.updateIsPlaying(false);
+    }
+    Stop() {
+        if (this.playingNow) {
+            this.playingNow.stop();
+            this.playingNow.release();
+            this.musicControls.destroy();
+        }
+    }
+    Play(podcast, author, title, image) {
+        const file = this.media.create(podcast);
+        this.Stop();
+        this.playingNow = file;
+        this.musicControls.create({
+            track: title,
+            artist: 'Greg Carlwood & ' + author,
+            cover: 'assets/imgs/Original_Logo_iTunes3.jpg',
+            // cover can be a local path (use fullpath 'file:///storage/emulated/...', or only 'my_image.jpg' if my_image.jpg is in the www folder of your app)
+            //           or a remote url ('http://...', 'https://...', 'ftp://...')
+            isPlaying: true,
+            dismissable: false,
+            // hide previous/next/close buttons:
+            hasPrev: false,
+            hasNext: false,
+            hasClose: true,
+            // iOS only, optional
+            album: 'Absolution',
+            duration: 60,
+            elapsed: 10,
+            hasSkipForward: true,
+            hasSkipBackward: true,
+            skipForwardInterval: 15,
+            skipBackwardInterval: 15,
+            hasScrubbing: false,
+            // Android only, optional
+            // text displayed in the status bar when the notification (and the ticker) are updated, optional
+            ticker: 'Now playing ' + title,
+            // All icons default to their built-in android equivalents
+            playIcon: 'media_play',
+            pauseIcon: 'media_pause',
+            prevIcon: 'media_prev',
+            nextIcon: 'media_next',
+            closeIcon: 'media_close',
+            notificationIcon: 'notification'
+        }).then((res) => {
+            this.musicControls.updateIsPlaying(true);
+        });
+        file.play();
+        console.log('playing', podcast, file);
+        //this.musicControls.updateIsPlaying(true);
+        this.musicControls.subscribe().subscribe(action => {
+            const message = JSON.parse(action).message;
+            switch (message) {
+                case 'music-controls-next':
+                    break;
+                case 'music-controls-previous':
+                    break;
+                case 'music-controls-pause':
+                    file.pause();
+                    this.musicControls.updateIsPlaying(false);
+                    break;
+                case 'music-controls-play':
+                    file.play();
+                    this.musicControls.updateIsPlaying(true);
+                    break;
+                case 'music-controls-destroy':
+                    this.Stop();
+                    break;
+                default:
+                    console.log(action);
+                    break;
+            }
+        });
+        this.musicControls.listen();
+    }
+};
+PlayerProvider = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_media__["a" /* Media */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_music_controls__["a" /* MusicControls */]])
+], PlayerProvider);
+
+//# sourceMappingURL=player.js.map
+
+/***/ })
+
+},[221]);
+//# sourceMappingURL=main.js.map

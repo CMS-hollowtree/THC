@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { PlayerProvider } from '../../providers/player/player';
 import { StorageProvider } from '../../providers/storage/storage';
-import { AdMobFree, AdMobFreeBannerConfig, AdMobFreeInterstitialConfig } from '@ionic-native/admob-free';
+import { AdMobFree, AdMobFreeInterstitialConfig } from '@ionic-native/admob-free';
 
 
 @IonicPage()

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.hollowtree.thc" version="0.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.hollowtree.thc" version="0.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>THC Podcasts</name>
     <description>The HigherSide Chat Show - Podcast App</description>
     <author email="sullivanc28@me.com" href="http://ionicframework.com/">HollowTree</author>

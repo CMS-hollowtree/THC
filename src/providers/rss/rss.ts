@@ -70,7 +70,7 @@ export class RssProvider {
           console.log(this.storageData.podcasts.findIndex(i => i.pubDate === pcast.pubDate));
     		  if (this.storageData.podcasts.findIndex(i => i.pubDate === pcast.pubDate) < 0) {
             console.log('found new', pcast);
-            this.storageData.podcasts.push(pcast);
+            this.storageData.podcasts.unshift(pcast);
           }else{
             
           }

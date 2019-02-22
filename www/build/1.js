@@ -1,1 +1,39 @@
-webpackJsonp([1],{277:function(a,_,e){"use strict";Object.defineProperty(_,"__esModule",{value:!0});var t=e(0),r=(e(2),e(47),e(73));let c=class{};var n=e(216),i=e(217),o=e(218),u=e(219),s=e(220),d=e(221),b=e(222),l=e(223),f=e(224),j=e(226),k=e(12),v=e(17),p=e(146),P=e(48);e.d(_,"PodcastPageModuleNgFactory",function(){return g});var g=t.W(c,[],function(a){return t._7([t._8(512,t.i,t.S,[[8,[n.a,i.a,o.a,u.a,s.a,d.a,b.a,l.a,f.a,j.a]],[3,t.i],t.s]),t._8(4608,k.k,k.j,[t.r,[2,k.t]]),t._8(4608,v.k,v.k,[]),t._8(4608,v.c,v.c,[]),t._8(512,k.b,k.b,[]),t._8(512,v.j,v.j,[]),t._8(512,v.d,v.d,[]),t._8(512,v.i,v.i,[]),t._8(512,p.a,p.a,[]),t._8(512,p.b,p.b,[]),t._8(512,c,c,[]),t._8(256,P.a,r.a,[])])})}});
+webpackJsonp([1],{
+
+/***/ 308:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PodcastPageModule", function() { return PodcastPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__podcast__ = __webpack_require__(57);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+let PodcastPageModule = class PodcastPageModule {
+};
+PodcastPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__podcast__["a" /* PodcastPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__podcast__["a" /* PodcastPage */]),
+        ],
+    })
+], PodcastPageModule);
+
+//# sourceMappingURL=podcast.module.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=1.js.map
